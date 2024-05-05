@@ -37,6 +37,7 @@ namespace CppCLRWinFormsProject {
 		   String^ connection = "";
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ btn_register;
+
 		   MySqlConnection^ conn;
 
 		void LoadConfig() {
@@ -285,8 +286,10 @@ namespace CppCLRWinFormsProject {
 		reg->AutoScroll = true;
 		reg->Dock = DockStyle::Fill;
 
-		this->Controls->Clear();
-		this->Controls->Add(reg);
+		this->Hide();
+
+		//this->Controls->Clear();
+		//this->Controls->Add(reg);
 
 		reg->Show();
 		

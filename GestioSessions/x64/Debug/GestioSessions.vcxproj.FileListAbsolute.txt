@@ -3,3 +3,5 @@ C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSe.29678AAC.Up
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.Login.resources
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.vcxproj.GenerateResource.cache
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.Inici.resources
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.Register.resources
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.CrearSessio.resources
