@@ -44,9 +44,6 @@
     <ClInclude Include="Register.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CrearSessio.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TxAltaSessio.h">
       <Filter>Source Files\Domini</Filter>
     </ClInclude>
@@ -54,6 +51,9 @@
       <Filter>Source Files\Dades</Filter>
     </ClInclude>
     <ClInclude Include="Sessio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrearSessio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -76,9 +76,6 @@
     <ClCompile Include="Register.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CrearSessio.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TxAltaSessio.cpp">
       <Filter>Source Files\Domini</Filter>
     </ClCompile>
@@ -86,6 +83,9 @@
       <Filter>Source Files\Dades</Filter>
     </ClCompile>
     <ClCompile Include="Sessio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CrearSessio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

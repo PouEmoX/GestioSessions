@@ -4,6 +4,7 @@
 
 #include"Inici.h"
 #include"Register.h"
+#include "CrearSessio.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -281,15 +282,15 @@ namespace CppCLRWinFormsProject {
 	private: System::Void btn_register_Click(System::Object^ sender, System::EventArgs^ e) {
 		
 		GestioSessions::Register^ reg = gcnew GestioSessions::Register();
-		
+
 		reg->TopLevel = false;
 		reg->AutoScroll = true;
 		reg->Dock = DockStyle::Fill;
 
 		this->Hide();
 
-		//this->Controls->Clear();
-		//this->Controls->Add(reg);
+		this->Controls->Clear();
+		this->Controls->Add(reg);
 
 		reg->Show();
 		

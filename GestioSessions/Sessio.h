@@ -12,5 +12,7 @@ private:
 
 public:
 	Sessio(string estudiant, string tema, string dia, string hora);
+
+	Sessio();
 };
 

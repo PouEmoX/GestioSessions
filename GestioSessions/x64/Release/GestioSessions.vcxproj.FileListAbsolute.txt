@@ -1,0 +1,7 @@
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSessions.vcxproj.AssemblyReference.cache
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSessions.CrearSessio.resources
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSessions.Inici.resources
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSessions.Login.resources
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSessions.Register.resources
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSessions.vcxproj.GenerateResource.cache
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Release\GestioSe.29678AAC.Up2Date

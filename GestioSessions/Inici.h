@@ -1,5 +1,5 @@
 #pragma once
-#include"CrearSessio.h"
+#include "CrearSessio.h"
 
 namespace GestioSessions {
 
@@ -146,6 +146,7 @@ namespace GestioSessions {
 			this->btn_crear_sessio->TabIndex = 8;
 			this->btn_crear_sessio->Text = L"Crear Sessió";
 			this->btn_crear_sessio->UseVisualStyleBackColor = false;
+			this->btn_crear_sessio->Click += gcnew System::EventHandler(this, &Inici::btn_crear_sessio_Click);
 			// 
 			// panel3
 			// 
@@ -234,6 +235,9 @@ namespace GestioSessions {
 
 private: System::Void btn_exit_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void btn_crear_sessio_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->OpenPanel(gcnew GestioSessions::CrearSessio);
 }
 };
 }

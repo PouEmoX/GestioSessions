@@ -1,0 +1,32 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  CppCLR_WinFormsProject.cpp
+  CrearSessio.cpp
+  Form1.cpp
+  Inici.cpp
+  PassarelaSessio.cpp
+  Register.cpp
+  Sessio.cpp
+  TxAltaSessio.cpp
+  Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+mysqlcppconn-static.lib(mysql_art_resultset.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_art_resultset.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_prepared_statement.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_prepared_statement.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_connection.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_connection.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_util.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_util.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_art_rset_metadata.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_art_rset_metadata.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_resultbind.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_resultbind.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_warning.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_warning.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_ps_resultset.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_ps_resultset.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_ps_resultset_metadata.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_ps_resultset_metadata.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_parameter_metadata.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_parameter_metadata.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_uri.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_uri.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_metadata.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_metadata.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_statement.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_statement.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_debug.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_debug.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_resultset.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_resultset.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+mysqlcppconn-static.lib(mysql_resultset_metadata.obj) : warning LNK4099: no se encontró PDB '' con 'mysqlcppconn-static.lib(mysql_resultset_metadata.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+Register.obj : warning LNK4248: símbolo (token) de typeref sin resolver (01000009) para 'GestioSessions.Login'; no se puede ejecutar la imagen
+CppCLR_WinFormsProject.obj : warning LNK4248: símbolo (token) de typeref sin resolver (01000019) para 'GestioSessions.Login'; no se puede ejecutar la imagen
+  GestioSessions.vcxproj -> C:\Uni\Soporte ESSI\GestioSessions\x64\Release\GestioSessions.exe

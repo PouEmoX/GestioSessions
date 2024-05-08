@@ -3,3 +3,6 @@
 
 Sessio::Sessio(string estudiant, string tema, string dia, string hora)
 	:estudiant_creador(estudiant), tema(tema), dia(dia), hora(hora) {}
+
+Sessio::Sessio()
+	: estudiant_creador(""), tema(""), dia(""), hora("") {}
