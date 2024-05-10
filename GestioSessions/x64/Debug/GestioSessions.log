@@ -1,9 +1,16 @@
-﻿  CppCLR_WinFormsProject.cpp
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  CppCLR_WinFormsProject.cpp
   CrearSessio.cpp
+  Database.cpp
+  Form1.cpp
   Inici.cpp
   PassarelaSessio.cpp
+  Register.cpp
+  Sessio.cpp
   TxAltaSessio.cpp
   Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
 Register.obj : warning LNK4248: símbolo (token) de typeref sin resolver (01000009) para 'GestioSessions.Login'; no se puede ejecutar la imagen
 CppCLR_WinFormsProject.obj : warning LNK4248: símbolo (token) de typeref sin resolver (0100001C) para 'GestioSessions.Login'; no se puede ejecutar la imagen
