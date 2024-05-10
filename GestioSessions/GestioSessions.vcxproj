@@ -141,6 +141,7 @@
     <ClInclude Include="CrearSessio.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Database.h" />
     <ClInclude Include="Inici.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -160,6 +161,7 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="CrearSessio.cpp" />
+    <ClCompile Include="Database.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Inici.cpp" />
     <ClCompile Include="PassarelaSessio.cpp" />
