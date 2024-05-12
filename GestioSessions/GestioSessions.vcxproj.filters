@@ -59,6 +59,9 @@
     <ClInclude Include="Database.h">
       <Filter>Source Files\Dades</Filter>
     </ClInclude>
+    <ClInclude Include="AuthSys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -93,6 +96,9 @@
     </ClCompile>
     <ClCompile Include="Database.cpp">
       <Filter>Source Files\Dades</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthSys.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

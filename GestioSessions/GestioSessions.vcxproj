@@ -138,6 +138,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AuthSys.h" />
     <ClInclude Include="CrearSessio.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -159,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="AuthSys.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="CrearSessio.cpp" />
     <ClCompile Include="Database.cpp" />
