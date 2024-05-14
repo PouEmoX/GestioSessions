@@ -3,7 +3,8 @@
 
 TxAltaSessio::TxAltaSessio() {};
 
-void TxAltaSessio::AltaSessio(string estudiant, string tema, string dia, string hora) {
-	PassarelaSessio ps;
+void TxAltaSessio::AltaSessio(string tema, string dia) {
+	PassarelaSessio ps(tema, dia);
+	ps.guardarSessio();
 }
 

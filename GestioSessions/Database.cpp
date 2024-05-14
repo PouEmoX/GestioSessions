@@ -4,6 +4,7 @@
 #include<fstream>
 #include <vcclr.h>
 
+
 Database::Database() {
 
     // Inicializar la cadena de conexión
@@ -32,24 +33,6 @@ Database::Database() {
 
     connectionString = connection;
     conn = gcnew MySqlConnection(connectionString);
-}
-
-int filasSesiones(MySqlConnection^ conn) {
-    int numeroFilas = 0;
-    MySqlCommand^ cmd = gcnew MySqlCommand("SELECT COUNT(*) FROM sesiones", conn);
-
-    try {
-        conn->Open();
-        numeroFilas = Convert::ToInt32(cmd->ExecuteScalar());
-    }
-    catch (Exception^ ex) {
-        Console::WriteLine(ex->Message);
-    }
-    finally {
-        conn->Close();
-    }
-
-    return numeroFilas;
 }
 
 MySqlDataReader^ Database::executarReader(string comanda_sql) {

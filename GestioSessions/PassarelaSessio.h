@@ -8,4 +8,7 @@ private:
     Sessio sessio; // Utiliza un puntero inteligente para gestionar la vida útil de Sessio
 public:
     PassarelaSessio();
+    PassarelaSessio(string tema, string dia);
+
+    void guardarSessio();
 };

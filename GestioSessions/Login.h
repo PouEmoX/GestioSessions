@@ -5,6 +5,7 @@
 #include"Inici.h"
 #include"Register.h"
 #include "CrearSessio.h"
+#include "AuthSys.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -236,9 +237,33 @@ namespace CppCLRWinFormsProject {
 
 		}
 #pragma endregion
+		std::string convertirString(System::String^ strNet) {
+			// Obtener la longitud del string .NET
+			int length = strNet->Length;
+
+			// Reservar memoria para el buffer de caracteres
+			char* chars = new char[length + 1];
+
+			// Copiar los caracteres desde el string .NET al buffer de caracteres
+			for (int i = 0; i < length; ++i) {
+				chars[i] = static_cast<char>(strNet[i]);
+			}
+
+			// Agregar el carácter nulo al final del buffer de caracteres
+			chars[length] = '\0';
+
+			// Crear un std::string desde el buffer de caracteres
+			std::string strStd(chars);
+
+			// Liberar la memoria del buffer de caracteres
+			delete[] chars;
+
+			// Retornar el std::string convertido
+			return strStd;
+		}
 
 	private: System::Void btn_login_Click(System::Object^ sender, System::EventArgs^ e) {
-		String^ sql = "select * from estudiantes where Nombre = '" + txt_username->Text + "' and Contra = '" + txt_pwd->Text + "'";
+		String^ sql = "select * from estudiants where trim(username) = '" + txt_username->Text + "' and trim(password) = '" + txt_pwd->Text + "'";
 		MySqlCommand^ cursor = gcnew MySqlCommand(sql, conn);
 
 		MySqlDataReader^ dataReader;
@@ -247,6 +272,10 @@ namespace CppCLRWinFormsProject {
 			this->conn->Open();
 			dataReader = cursor->ExecuteReader();
 			if (dataReader->Read()) {
+
+				String^ username = txt_username->Text;
+				AuthSys& authInstance = AuthSys::getInstance();
+				authInstance.setUsername(convertirString(username));
 
 				// Crear una instancia del nuevo formulario
 				GestioSessions::Inici^ inici = gcnew GestioSessions::Inici();
@@ -265,7 +294,7 @@ namespace CppCLRWinFormsProject {
 
 			}
 			else {
-				MessageBox::Show("Usuario incorrecto");
+				MessageBox::Show("Usuari o Contranya incorrecte");
 			}
 		}
 		catch (Exception^ x) {

@@ -6,6 +6,6 @@ class TxAltaSessio
 private: 
 public:
 	TxAltaSessio();
-	void AltaSessio(string estudiant, string tema, string dia, string hora);
+	void AltaSessio(string tema, string dia);
 };
 
