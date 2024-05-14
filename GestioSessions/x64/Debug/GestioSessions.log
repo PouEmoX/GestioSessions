@@ -1,4 +1,7 @@
-﻿  PassarelaSessio.cpp
+﻿  CppCLR_WinFormsProject.cpp
+  CrearSessio.cpp
+  Inici.cpp
+  Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
 Register.obj : warning LNK4248: símbolo (token) de typeref sin resolver (01000009) para 'GestioSessions.Login'; no se puede ejecutar la imagen
 CppCLR_WinFormsProject.obj : warning LNK4248: símbolo (token) de typeref sin resolver (0100001F) para 'GestioSessions.Login'; no se puede ejecutar la imagen

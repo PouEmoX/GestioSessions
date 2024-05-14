@@ -180,6 +180,8 @@ namespace GestioSessions {
 	private: System::Void btn_creaSessio_Click(System::Object^ sender, System::EventArgs^ e) {
 		TxAltaSessio tAS;
 		tAS.AltaSessio(convertirString(txt_tema->Text), convertirString(txt_dia->Text));
+		txt_tema->Text = "";
+		txt_dia->Text = "";
 	}
 };
 }
