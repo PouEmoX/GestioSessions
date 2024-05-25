@@ -178,10 +178,18 @@ namespace GestioSessions {
 	}
 
 	private: System::Void btn_creaSessio_Click(System::Object^ sender, System::EventArgs^ e) {
-		TxAltaSessio tAS;
-		tAS.AltaSessio(convertirString(txt_tema->Text), convertirString(txt_dia->Text));
-		txt_tema->Text = "";
-		txt_dia->Text = "";
+		TxAltaSessio tAS(convertirString(txt_tema->Text), convertirString(txt_dia->Text));
+
+		try {
+			tAS.Executa();
+		}
+		catch (Exception^ e) {
+			MessageBox::Show("Error al crear la sessió " + e->Message);
+		}
+		finally {
+			txt_tema->Text = "";
+			txt_dia->Text = "";
+		}
 	}
 };
 }

@@ -76,6 +76,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PublicIncludeDirectories>
     </PublicIncludeDirectories>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>true</EnableClangTidyCodeAnalysis>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -124,7 +126,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpp14</LanguageStandard>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ConformanceMode>false</ConformanceMode>
     </ClCompile>
@@ -140,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AuthSys.h" />
+    <ClInclude Include="CercadoraEstudiant.h" />
     <ClInclude Include="CrearSessio.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -147,9 +150,16 @@
     <ClInclude Include="Inici.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ItemControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MevesSessions.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PassarelaEstudiant.h" />
     <ClInclude Include="PassarelaSessio.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Register.h">
@@ -158,15 +168,20 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sessio.h" />
     <ClInclude Include="TxAltaSessio.h" />
+    <ClInclude Include="TxLogin.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="AuthSys.cpp" />
+    <ClCompile Include="CercadoraEstudiant.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="CrearSessio.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Inici.cpp" />
+    <ClCompile Include="ItemControl.cpp" />
+    <ClCompile Include="MevesSessions.cpp" />
+    <ClCompile Include="PassarelaEstudiant.cpp" />
     <ClCompile Include="PassarelaSessio.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -177,6 +192,7 @@
     <ClCompile Include="Register.cpp" />
     <ClCompile Include="Sessio.cpp" />
     <ClCompile Include="TxAltaSessio.cpp" />
+    <ClCompile Include="TxLogin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -198,8 +214,14 @@
     <EmbeddedResource Include="Inici.resx">
       <DependentUpon>Inici.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ItemControl.resx">
+      <DependentUpon>ItemControl.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MevesSessions.resx">
+      <DependentUpon>MevesSessions.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.h</DependentUpon>

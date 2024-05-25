@@ -62,6 +62,21 @@
     <ClInclude Include="AuthSys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MevesSessions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxLogin.h">
+      <Filter>Source Files\Domini</Filter>
+    </ClInclude>
+    <ClInclude Include="CercadoraEstudiant.h">
+      <Filter>Source Files\Dades</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaEstudiant.h">
+      <Filter>Source Files\Dades</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -99,6 +114,21 @@
     </ClCompile>
     <ClCompile Include="AuthSys.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MevesSessions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxLogin.cpp">
+      <Filter>Source Files\Domini</Filter>
+    </ClCompile>
+    <ClCompile Include="CercadoraEstudiant.cpp">
+      <Filter>Source Files\Dades</Filter>
+    </ClCompile>
+    <ClCompile Include="PassarelaEstudiant.cpp">
+      <Filter>Source Files\Dades</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

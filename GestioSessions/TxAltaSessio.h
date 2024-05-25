@@ -4,8 +4,10 @@
 class TxAltaSessio
 {
 private: 
+	string tema;
+	string dia;
 public:
-	TxAltaSessio();
-	void AltaSessio(string tema, string dia);
+	TxAltaSessio(string t, string d);
+	void Executa();
 };
 

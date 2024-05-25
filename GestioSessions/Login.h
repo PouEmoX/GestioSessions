@@ -7,6 +7,8 @@
 #include "CrearSessio.h"
 #include "AuthSys.h"
 
+#include "TxLogin.h"
+
 namespace CppCLRWinFormsProject {
 
 	using namespace System;
@@ -237,46 +239,32 @@ namespace CppCLRWinFormsProject {
 
 		}
 #pragma endregion
-		std::string convertirString(System::String^ strNet) {
-			// Obtener la longitud del string .NET
-			int length = strNet->Length;
-
-			// Reservar memoria para el buffer de caracteres
-			char* chars = new char[length + 1];
-
-			// Copiar los caracteres desde el string .NET al buffer de caracteres
-			for (int i = 0; i < length; ++i) {
-				chars[i] = static_cast<char>(strNet[i]);
+		std::string convertirString(System::String^ str) {
+			if (str == nullptr) {
+				return "";
 			}
 
-			// Agregar el carácter nulo al final del buffer de caracteres
-			chars[length] = '\0';
-
-			// Crear un std::string desde el buffer de caracteres
-			std::string strStd(chars);
-
-			// Liberar la memoria del buffer de caracteres
-			delete[] chars;
-
-			// Retornar el std::string convertido
-			return strStd;
+			IntPtr p = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(str);
+			std::string os = static_cast<const char*>(p.ToPointer());
+			System::Runtime::InteropServices::Marshal::FreeHGlobal(p);
+			return os;
 		}
 
-	private: System::Void btn_login_Click(System::Object^ sender, System::EventArgs^ e) {
-		String^ sql = "select * from estudiants where trim(username) = '" + txt_username->Text + "' and trim(password) = '" + txt_pwd->Text + "'";
-		MySqlCommand^ cursor = gcnew MySqlCommand(sql, conn);
+		System::String^ convertirString(const std::string& str) {
+			return gcnew System::String(str.c_str());
+		}
 
-		MySqlDataReader^ dataReader;
+
+	private: System::Void btn_login_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Convertir los datos de entrada a std::string
+		std::string username = convertirString(txt_username->Text);
+		std::string password = convertirString(txt_pwd->Text);
+
+		// Crear una instancia de TxLogin y ejecutarla
+		TxLogin txLogin = TxLogin(username, password);
 
 		try {
-			this->conn->Open();
-			dataReader = cursor->ExecuteReader();
-			if (dataReader->Read()) {
-
-				String^ username = txt_username->Text;
-				AuthSys& authInstance = AuthSys::getInstance();
-				authInstance.setUsername(convertirString(username));
-
+			if (txLogin.Executa()) {
 				// Crear una instancia del nuevo formulario
 				GestioSessions::Inici^ inici = gcnew GestioSessions::Inici();
 
@@ -291,19 +279,18 @@ namespace CppCLRWinFormsProject {
 
 				// Mostrar el formulario
 				inici->Show();
-
 			}
 			else {
-				MessageBox::Show("Usuari o Contranya incorrecte");
+				// Mostrar mensaje de error si el inicio de sesión falla
+				MessageBox::Show("Usuario o contraseña incorrectos");
 			}
 		}
-		catch (Exception^ x) {
-			MessageBox::Show(x->Message);
-		}
-		finally {
-			conn->Close();
+		catch (Exception^ ex) {
+			// Mostrar mensaje de error si ocurre una excepción
+			MessageBox::Show("Error al iniciar sesión: " + ex->Message);
 		}
 	}
+
 	private: System::Void btn_exit_Click(System::Object^ sender, System::EventArgs^ e) {
 		Application::Exit();
 	}

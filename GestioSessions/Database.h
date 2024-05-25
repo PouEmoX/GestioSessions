@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <map>
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -21,7 +22,7 @@ public:
     Database();
 
     MySqlDataReader^ executarReader(string comanda_sql);
-
+    void executarNonQuery(string comanda_sql, map<string, string> parametros);
     int executarScalar(string comanda_sql);
 
     void beginTransaction(MySqlTransaction^ transaccio, MySqlConnection^ conn);

@@ -38,7 +38,6 @@ Database::Database() {
 MySqlDataReader^ Database::executarReader(string comanda_sql) {
     String^ sql = gcnew String(comanda_sql.c_str());
     MySqlCommand^ cursor = gcnew MySqlCommand(sql, conn);
-
     MySqlDataReader^ dataReader;
 
     try {
@@ -46,13 +45,35 @@ MySqlDataReader^ Database::executarReader(string comanda_sql) {
         dataReader = cursor->ExecuteReader();
     }
     catch (Exception^ x) {
-        MessageBox::Show(x->Message);
+        conn->Close();
+        throw; // Re-lanzar la excepción para que la capa superior la maneje
+    }
+
+    return dataReader;
+}
+
+
+void Database::executarNonQuery(string comanda_sql, map<string, string> parametros) {
+    String^ sql = gcnew String(comanda_sql.c_str());
+    MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+    // Añadir parámetros
+    for (auto const& param : parametros) {
+        String^ paramName = gcnew String(param.first.c_str());
+        String^ paramValue = gcnew String(param.second.c_str());
+        cmd->Parameters->AddWithValue(paramName, paramValue);
+    }
+
+    try {
+        conn->Open();
+        cmd->ExecuteNonQuery();
+    }
+    catch (Exception^ ex) {
+        Console::WriteLine(ex->Message);
     }
     finally {
         conn->Close();
     }
-    
-    return dataReader;
 }
 
 int Database::executarScalar(string comanda_sql) {

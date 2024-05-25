@@ -1,14 +1,25 @@
 #pragma once
-#include "Sessio.h"
-#include "Database.h"
+#include<iostream>
+
+using namespace std;
 
 class PassarelaSessio
 {
 private:
-    Sessio sessio; // Utiliza un puntero inteligente para gestionar la vida útil de Sessio
+    string estudiant;
+    string tema;
+    string dia;
 public:
     PassarelaSessio();
-    PassarelaSessio(string tema, string dia);
+    PassarelaSessio(string e, string t,string d);
 
-    void guardarSessio();
+    void inserta();
+
+    string obteEstudiant();
+    string obteTema();
+    string obteDia();
+
+    void posaEstudiant(string e);
+    void posaTema(string t);
+    void posaDia(string d);
 };

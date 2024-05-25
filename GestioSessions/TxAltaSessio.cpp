@@ -1,10 +1,16 @@
 #include "pch.h"
 #include "TxAltaSessio.h"
+#include "AuthSys.h"
 
-TxAltaSessio::TxAltaSessio() {};
+TxAltaSessio::TxAltaSessio(string t, string d) {
+	dia = d;
+	tema = t;
 
-void TxAltaSessio::AltaSessio(string tema, string dia) {
-	PassarelaSessio ps(tema, dia);
-	ps.guardarSessio();
+};
+
+void TxAltaSessio::Executa() {
+	AuthSys& auth = AuthSys::getInstance();
+	PassarelaSessio ps(auth.getUsername(), tema, dia);
+	ps.inserta();
 }
 

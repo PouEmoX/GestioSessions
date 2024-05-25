@@ -1,6 +1,8 @@
   GestioSessions.CrearSessio.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.Inici.resources - Embedded, ContainedInManifestFile, 
+  GestioSessions.ItemControl.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.Login.resources - Embedded, ContainedInManifestFile, 
+  GestioSessions.MevesSessions.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.Register.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly GestioSessions, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
@@ -22,6 +24,16 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class GestioSessions.CrearSessio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestioSessions.ItemControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SetData(String, String, String): PrivateScope, Public, HideBySig
+Class GestioSessions.MevesSessions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(): PrivateScope, Public, HideBySig
 Class GestioSessions.Inici: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

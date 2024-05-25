@@ -1,26 +1,54 @@
 #include "pch.h"
 #include "PassarelaSessio.h"
-#include "AuthSys.h"
 #include "Database.h"
 
 PassarelaSessio::PassarelaSessio() {
-    sessio = Sessio();
+    estudiant = "";
+    tema = "";
+    dia = "";
 }
 
-PassarelaSessio::PassarelaSessio(string tema, string dia) {
-    AuthSys& authInstance = AuthSys::getInstance();
-    sessio = Sessio(authInstance.getUsername(), tema, dia);
+PassarelaSessio::PassarelaSessio(string e,  string t, string d) {
+    estudiant = e;
+    tema = t;
+    dia = d;
+}
+string PassarelaSessio::obteEstudiant() {
+    return estudiant;
+}
+string PassarelaSessio::obteTema() {
+    return tema;
+}
+string PassarelaSessio::obteDia() {
+    return dia;
 }
 
-void PassarelaSessio::guardarSessio() {
-    //Aplicar TRIM()
-    AuthSys& authInstance = AuthSys::getInstance();
-    string username = authInstance.getUsername();
-    string trimmedUsername = "'" + username.substr(username.find_first_not_of(' '), username.find_last_not_of(' ') + 1) + "'";
+void PassarelaSessio::posaEstudiant(string e) {
+    estudiant = e;
+}
+void PassarelaSessio::posaTema(string t) {
+    tema = t;
+}
+void PassarelaSessio::posaDia(string d) {
+    dia = d;
+}
 
-    // Crear la consulta SQL con el username limpio
-    string sql = "INSERT INTO sessions(estudiant, tema, dia) VALUES(" + trimmedUsername + ", '" + sessio.get_tema() + "', '" + sessio.get_dia() + "')";
+void PassarelaSessio::inserta() {
+    // Aplicar TRIM() al username
+    string username = estudiant;
+    string trimmedUsername = username.substr(username.find_first_not_of(' '), username.find_last_not_of(' ') - username.find_first_not_of(' ') + 1);
 
     Database db;
-    db.executarReader(sql);
+
+    string sql = "INSERT INTO sessions(creador, tema, dia) VALUES(@username, @tema, @dia)";
+    db.executarNonQuery(sql, { {"@username", trimmedUsername}, {"@tema", tema}, {"@dia", dia} });
+
+    sql = "SELECT LAST_INSERT_ID()";
+    int id = db.executarScalar(sql);
+
+    sql = "INSERT INTO participants (sessioId, estudiantUsername) VALUES (@sessioId, @username)";
+    db.executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
 }
+
+
+

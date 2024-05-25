@@ -1,5 +1,6 @@
 #pragma once
 #include "CrearSessio.h"
+#include "MevesSessions.h"
 
 namespace GestioSessions {
 
@@ -168,6 +169,7 @@ namespace GestioSessions {
 			this->btn_meves_sessions->TabIndex = 7;
 			this->btn_meves_sessions->Text = L"Meves Sessions";
 			this->btn_meves_sessions->UseVisualStyleBackColor = false;
+			this->btn_meves_sessions->Click += gcnew System::EventHandler(this, &Inici::btn_meves_sessions_Click);
 			// 
 			// panel1
 			// 
@@ -238,6 +240,9 @@ private: System::Void btn_exit_Click(System::Object^ sender, System::EventArgs^ 
 }
 private: System::Void btn_crear_sessio_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->OpenPanel(gcnew GestioSessions::CrearSessio);
+}
+private: System::Void btn_meves_sessions_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->OpenPanel(gcnew GestioSessions::MevesSessions);
 }
 };
 }
