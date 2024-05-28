@@ -1,8 +1,4 @@
-﻿  CercadoraEstudiant.cpp
-C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraEstudiant.cpp(44,23): warning C4101: 'ex': variable local sin referencia
-  (compilando archivo de origen "/CercadoraEstudiant.cpp")
-  
-  CppCLR_WinFormsProject.cpp
+﻿  CppCLR_WinFormsProject.cpp
   TxLogin.cpp
   Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo

@@ -256,37 +256,29 @@ namespace CppCLRWinFormsProject {
 
 
 	private: System::Void btn_login_Click(System::Object^ sender, System::EventArgs^ e) {
-		// Convertir los datos de entrada a std::string
 		std::string username = convertirString(txt_username->Text);
 		std::string password = convertirString(txt_pwd->Text);
 
-		// Crear una instancia de TxLogin y ejecutarla
 		TxLogin txLogin = TxLogin(username, password);
 
 		try {
 			if (txLogin.Executa()) {
-				// Crear una instancia del nuevo formulario
 				GestioSessions::Inici^ inici = gcnew GestioSessions::Inici();
 
-				// Establecer el formulario padre del nuevo formulario como este formulario principal
 				inici->TopLevel = false;
 				inici->AutoScroll = true;
 				inici->Dock = DockStyle::Fill;
 
-				// Agregar el formulario al panel contenedor del formulario principal
 				this->Controls->Clear(); // Limpia cualquier control previo en el panel
 				this->Controls->Add(inici);
 
-				// Mostrar el formulario
 				inici->Show();
 			}
 			else {
-				// Mostrar mensaje de error si el inicio de sesión falla
 				MessageBox::Show("Usuario o contraseña incorrectos");
 			}
 		}
 		catch (Exception^ ex) {
-			// Mostrar mensaje de error si ocurre una excepción
 			MessageBox::Show("Error al iniciar sesión: " + ex->Message);
 		}
 	}
