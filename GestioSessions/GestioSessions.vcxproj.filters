@@ -77,6 +77,24 @@
     <ClInclude Include="PassarelaEstudiant.h">
       <Filter>Source Files\Dades</Filter>
     </ClInclude>
+    <ClInclude Include="Aux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlApuntarSessio.h">
+      <Filter>Source Files\Domini</Filter>
+    </ClInclude>
+    <ClInclude Include="TxVeureSessions.h">
+      <Filter>Source Files\Domini</Filter>
+    </ClInclude>
+    <ClInclude Include="CercadoraSessio.h">
+      <Filter>Source Files\Dades</Filter>
+    </ClInclude>
+    <ClInclude Include="CercarSessions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaParticipants.h">
+      <Filter>Source Files\Dades</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -128,6 +146,24 @@
       <Filter>Source Files\Dades</Filter>
     </ClCompile>
     <ClCompile Include="PassarelaEstudiant.cpp">
+      <Filter>Source Files\Dades</Filter>
+    </ClCompile>
+    <ClCompile Include="Aux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlApuntarSessio.cpp">
+      <Filter>Source Files\Domini</Filter>
+    </ClCompile>
+    <ClCompile Include="TxVeureSessions.cpp">
+      <Filter>Source Files\Domini</Filter>
+    </ClCompile>
+    <ClCompile Include="CercadoraSessio.cpp">
+      <Filter>Source Files\Dades</Filter>
+    </ClCompile>
+    <ClCompile Include="CercarSessions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassarelaParticipants.cpp">
       <Filter>Source Files\Dades</Filter>
     </ClCompile>
   </ItemGroup>

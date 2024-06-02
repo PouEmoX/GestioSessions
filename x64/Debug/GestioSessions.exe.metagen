@@ -1,3 +1,4 @@
+  GestioSessions.CercarSessions.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.CrearSessio.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.Inici.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.ItemControl.resources - Embedded, ContainedInManifestFile, 
@@ -21,19 +22,32 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Class GestioSessions.CrearSessio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class GestioSessions.ItemControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.UserControl
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    ItemActionEventHandler ItemActionEvent: SpecialName
   Methods:
+    add_ItemActionEvent(ItemActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ItemActionEvent(ItemActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
     SetData(String, String, String): PrivateScope, Public, HideBySig
+    convertirData(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+Class GestioSessions.ItemControl+ItemActionEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(ItemControl, EventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(ItemControl, EventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class GestioSessions.CercarSessions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestioSessions.CrearSessio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class GestioSessions.MevesSessions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Methods:
-    LoadData(): PrivateScope, Public, HideBySig
 Class GestioSessions.Inici: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

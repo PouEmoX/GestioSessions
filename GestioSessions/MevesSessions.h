@@ -1,6 +1,5 @@
 #pragma once
 #include "ItemControl.h"
-#include "Database.h"
 
 namespace GestioSessions {
 
@@ -11,9 +10,6 @@ namespace GestioSessions {
     using namespace System::Data;
     using namespace System::Drawing;
 
-    /// <summary>
-    /// Resumen de MevesSessions
-    /// </summary>
     public ref class MevesSessions : public System::Windows::Forms::Form
     {
     public:
@@ -24,9 +20,6 @@ namespace GestioSessions {
         }
 
     protected:
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
         ~MevesSessions()
         {
             if (components)
@@ -35,29 +28,20 @@ namespace GestioSessions {
             }
         }
 
-    private: System::Windows::Forms::Label^ label1;
-    private: System::Windows::Forms::Panel^ panel1;
+    private:
+        System::Windows::Forms::Label^ label1;
     private: System::Windows::Forms::Panel^ list_items;
 
-    protected:
 
-    private:
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
+
+
         System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
         void InitializeComponent(void)
         {
             this->label1 = (gcnew System::Windows::Forms::Label());
-            this->panel1 = (gcnew System::Windows::Forms::Panel());
             this->list_items = (gcnew System::Windows::Forms::Panel());
-            this->panel1->SuspendLayout();
             this->SuspendLayout();
             // 
             // label1
@@ -65,48 +49,40 @@ namespace GestioSessions {
             this->label1->AutoSize = true;
             this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label1->Location = System::Drawing::Point(183, 9);
+            this->label1->Location = System::Drawing::Point(104, 21);
+            this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->label1->Name = L"label1";
-            this->label1->Size = System::Drawing::Size(297, 54);
+            this->label1->Size = System::Drawing::Size(242, 45);
             this->label1->TabIndex = 0;
             this->label1->Text = L"Meves Sessions";
             // 
-            // panel1
-            // 
-            this->panel1->Controls->Add(this->label1);
-            this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
-            this->panel1->Location = System::Drawing::Point(0, 0);
-            this->panel1->Name = L"panel1";
-            this->panel1->Size = System::Drawing::Size(652, 78);
-            this->panel1->TabIndex = 1;
-            // 
             // list_items
             // 
-            this->list_items->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->list_items->Location = System::Drawing::Point(0, 78);
+            this->list_items->AutoScroll = true;
+            this->list_items->Location = System::Drawing::Point(9, 68);
+            this->list_items->Margin = System::Windows::Forms::Padding(2);
             this->list_items->Name = L"list_items";
-            this->list_items->Size = System::Drawing::Size(652, 369);
-            this->list_items->TabIndex = 2;
+            this->list_items->Size = System::Drawing::Size(582, 288);
+            this->list_items->TabIndex = 1;
             // 
             // MevesSessions
             // 
-            this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
-            this->ClientSize = System::Drawing::Size(652, 447);
+            this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+            this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+            this->ClientSize = System::Drawing::Size(600, 366);
+            this->Controls->Add(this->label1);
             this->Controls->Add(this->list_items);
-            this->Controls->Add(this->panel1);
-            this->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-                static_cast<System::Byte>(0)));
             this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+            this->Margin = System::Windows::Forms::Padding(2);
             this->Name = L"MevesSessions";
             this->Text = L"MevesSessions";
-            this->panel1->ResumeLayout(false);
-            this->panel1->PerformLayout();
             this->ResumeLayout(false);
+            this->PerformLayout();
 
         }
-#pragma endregion
 
-    public:
+    private:
         void LoadData();
+#pragma endregion
     };
 }

@@ -6,8 +6,10 @@
 #include"Register.h"
 #include "CrearSessio.h"
 #include "AuthSys.h"
+#include "Aux.h"
 
 #include "TxLogin.h"
+
 
 namespace CppCLRWinFormsProject {
 
@@ -239,25 +241,13 @@ namespace CppCLRWinFormsProject {
 
 		}
 #pragma endregion
-		std::string convertirString(System::String^ str) {
-			if (str == nullptr) {
-				return "";
-			}
 
-			IntPtr p = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(str);
-			std::string os = static_cast<const char*>(p.ToPointer());
-			System::Runtime::InteropServices::Marshal::FreeHGlobal(p);
-			return os;
-		}
-
-		System::String^ convertirString(const std::string& str) {
-			return gcnew System::String(str.c_str());
-		}
 
 
 	private: System::Void btn_login_Click(System::Object^ sender, System::EventArgs^ e) {
-		std::string username = convertirString(txt_username->Text);
-		std::string password = convertirString(txt_pwd->Text);
+		conversorString cs;
+		std::string username = cs.convertirString(txt_username->Text);
+		std::string password = cs.convertirString(txt_pwd->Text);
 
 		TxLogin txLogin = TxLogin(username, password);
 

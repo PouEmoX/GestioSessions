@@ -5,7 +5,6 @@
 TxAltaSessio::TxAltaSessio(string t, string d) {
 	dia = d;
 	tema = t;
-
 };
 
 void TxAltaSessio::Executa() {

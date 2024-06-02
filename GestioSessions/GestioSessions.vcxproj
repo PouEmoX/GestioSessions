@@ -142,10 +142,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AuthSys.h" />
+    <ClInclude Include="Aux.h" />
     <ClInclude Include="CercadoraEstudiant.h" />
+    <ClInclude Include="CercadoraSessio.h" />
+    <ClInclude Include="CercarSessions.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="CrearSessio.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CtrlApuntarSessio.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="Inici.h">
       <FileType>CppForm</FileType>
@@ -160,6 +166,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="PassarelaEstudiant.h" />
+    <ClInclude Include="PassarelaParticipants.h" />
     <ClInclude Include="PassarelaSessio.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Register.h">
@@ -169,19 +176,25 @@
     <ClInclude Include="Sessio.h" />
     <ClInclude Include="TxAltaSessio.h" />
     <ClInclude Include="TxLogin.h" />
+    <ClInclude Include="TxVeureSessions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="AuthSys.cpp" />
+    <ClCompile Include="Aux.cpp" />
     <ClCompile Include="CercadoraEstudiant.cpp" />
+    <ClCompile Include="CercadoraSessio.cpp" />
+    <ClCompile Include="CercarSessions.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="CrearSessio.cpp" />
+    <ClCompile Include="CtrlApuntarSessio.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Inici.cpp" />
     <ClCompile Include="ItemControl.cpp" />
     <ClCompile Include="MevesSessions.cpp" />
     <ClCompile Include="PassarelaEstudiant.cpp" />
+    <ClCompile Include="PassarelaParticipants.cpp" />
     <ClCompile Include="PassarelaSessio.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -193,6 +206,7 @@
     <ClCompile Include="Sessio.cpp" />
     <ClCompile Include="TxAltaSessio.cpp" />
     <ClCompile Include="TxLogin.cpp" />
+    <ClCompile Include="TxVeureSessions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -208,6 +222,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CercarSessions.resx">
+      <DependentUpon>CercarSessions.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearSessio.resx">
       <DependentUpon>CrearSessio.h</DependentUpon>
     </EmbeddedResource>

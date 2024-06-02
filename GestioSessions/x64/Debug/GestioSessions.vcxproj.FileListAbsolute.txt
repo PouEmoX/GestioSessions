@@ -7,3 +7,4 @@ C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.Meves
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.Register.resources
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.vcxproj.GenerateResource.cache
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSe.29678AAC.Up2Date
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\GestioSessions.CercarSessions.resources

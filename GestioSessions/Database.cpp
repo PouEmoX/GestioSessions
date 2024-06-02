@@ -76,17 +76,21 @@ void Database::executarNonQuery(string comanda_sql, map<string, string> parametr
     }
 }
 
-int Database::executarScalar(string comanda_sql) {
-    int value;
+int Database::executarScalar(std::string comanda_sql) {
+    int value = 0;
     String^ sql = gcnew String(comanda_sql.c_str());
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 
     try {
         conn->Open();
-        value = Convert::ToInt32(cmd->ExecuteScalar());
+        Object^ result = cmd->ExecuteScalar();
+        if (result != nullptr) {
+            value = Convert::ToInt32(result);
+        } else {
+        }
     }
     catch (Exception^ ex) {
-        Console::WriteLine(ex->Message);
+        throw(ex);
     }
     finally {
         conn->Close();
@@ -94,6 +98,7 @@ int Database::executarScalar(string comanda_sql) {
 
     return value;
 }
+
 
 void Database::beginTransaction(MySqlTransaction^ transaccio, MySqlConnection^ conn) {
     transaccio = conn->BeginTransaction();

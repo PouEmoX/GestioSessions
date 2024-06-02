@@ -1,6 +1,7 @@
 #pragma once
 #include "CrearSessio.h"
 #include "MevesSessions.h"
+#include "CercarSessions.h"
 
 namespace GestioSessions {
 
@@ -191,6 +192,7 @@ namespace GestioSessions {
 			this->btn_buscar_sessio->TabIndex = 6;
 			this->btn_buscar_sessio->Text = L"Buscar Sessions";
 			this->btn_buscar_sessio->UseVisualStyleBackColor = false;
+			this->btn_buscar_sessio->Click += gcnew System::EventHandler(this, &Inici::btn_buscar_sessio_Click);
 			// 
 			// display_panel
 			// 
@@ -243,6 +245,9 @@ private: System::Void btn_crear_sessio_Click(System::Object^ sender, System::Eve
 }
 private: System::Void btn_meves_sessions_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->OpenPanel(gcnew GestioSessions::MevesSessions);
+}
+private: System::Void btn_buscar_sessio_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->OpenPanel(gcnew GestioSessions::CercarSessions);
 }
 };
 }
