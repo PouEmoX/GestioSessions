@@ -159,6 +159,9 @@
     <ClInclude Include="ItemControl.h">
       <FileType>CppControl</FileType>
     </ClInclude>
+    <ClInclude Include="ItemControlNI.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -169,11 +172,12 @@
     <ClInclude Include="PassarelaParticipants.h" />
     <ClInclude Include="PassarelaSessio.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Register.h">
+    <ClInclude Include="Registrar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sessio.h" />
+    <ClInclude Include="TxAltaEstudiant.h" />
     <ClInclude Include="TxAltaSessio.h" />
     <ClInclude Include="TxLogin.h" />
     <ClInclude Include="TxVeureSessions.h" />
@@ -192,6 +196,7 @@
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Inici.cpp" />
     <ClCompile Include="ItemControl.cpp" />
+    <ClCompile Include="ItemControlNI.cpp" />
     <ClCompile Include="MevesSessions.cpp" />
     <ClCompile Include="PassarelaEstudiant.cpp" />
     <ClCompile Include="PassarelaParticipants.cpp" />
@@ -202,8 +207,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Register.cpp" />
+    <ClCompile Include="Registrar.cpp" />
     <ClCompile Include="Sessio.cpp" />
+    <ClCompile Include="TxAltaEstudiant.cpp" />
     <ClCompile Include="TxAltaSessio.cpp" />
     <ClCompile Include="TxLogin.cpp" />
     <ClCompile Include="TxVeureSessions.cpp" />
@@ -234,14 +240,17 @@
     <EmbeddedResource Include="ItemControl.resx">
       <DependentUpon>ItemControl.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ItemControlNI.resx">
+      <DependentUpon>ItemControlNI.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MevesSessions.resx">
       <DependentUpon>MevesSessions.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
-      <DependentUpon>Register.h</DependentUpon>
+    <EmbeddedResource Include="Registrar.resx">
+      <DependentUpon>Registrar.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -11,13 +11,15 @@ C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp;C:\Uni\Soporte ES
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Form1.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Form1.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Inici.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Inici.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\ItemControl.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\ItemControl.obj
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\ItemControlNI.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\ItemControlNI.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\MevesSessions.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\MevesSessions.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\PassarelaEstudiant.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\PassarelaParticipants.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\PassarelaSessio.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\pch.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\pch.obj
-C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Register.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Register.obj
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Registrar.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Registrar.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Sessio.obj
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxAltaEstudiant.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxAltaSessio.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxLogin.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxVeureSessions.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxVeureSessions.obj

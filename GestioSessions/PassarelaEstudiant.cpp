@@ -21,7 +21,13 @@ void PassarelaEstudiant::inserta() {
 	Database db;
 
 	string sql = "INSERT INTO estudiants(username, password) VALUES(@username, @password)";
-	db.executarNonQuery(sql, { {"@username", trimmedUsername}, {"@password", trimmedPassword}});
+
+	try {
+		db.executarNonQuery(sql, { {"@username", trimmedUsername}, {"@password", trimmedPassword} });
+	}
+	catch(Exception^ ex){
+		throw ex;
+	}
 }
 
 string PassarelaEstudiant::obteEstudiant() {

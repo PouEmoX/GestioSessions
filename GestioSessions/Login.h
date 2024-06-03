@@ -3,7 +3,7 @@
 #include<vcclr.h>
 
 #include"Inici.h"
-#include"Register.h"
+#include"Registrar.h"
 #include "CrearSessio.h"
 #include "AuthSys.h"
 #include "Aux.h"
@@ -278,20 +278,16 @@ namespace CppCLRWinFormsProject {
 	}
 
 	private: System::Void btn_register_Click(System::Object^ sender, System::EventArgs^ e) {
+		GestioSessions::Registrar^ reg = gcnew GestioSessions::Registrar();
 		
-		GestioSessions::Register^ reg = gcnew GestioSessions::Register();
-
 		reg->TopLevel = false;
 		reg->AutoScroll = true;
 		reg->Dock = DockStyle::Fill;
-
-		this->Hide();
 
 		this->Controls->Clear();
 		this->Controls->Add(reg);
 
 		reg->Show();
-		
 	}
 		   
 };

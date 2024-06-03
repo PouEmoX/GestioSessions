@@ -2,9 +2,10 @@
   GestioSessions.CrearSessio.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.Inici.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.ItemControl.resources - Embedded, ContainedInManifestFile, 
+  GestioSessions.ItemControlNI.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.Login.resources - Embedded, ContainedInManifestFile, 
   GestioSessions.MevesSessions.resources - Embedded, ContainedInManifestFile, 
-  GestioSessions.Register.resources - Embedded, ContainedInManifestFile, 
+  GestioSessions.Registrar.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly GestioSessions, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -51,9 +52,26 @@ Class GestioSessions.MevesSessions: AutoLayout, AnsiClass, Class, Public, Before
 Class GestioSessions.Inici: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class GestioSessions.Register: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class GestioSessions.Registrar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class CppCLRWinFormsProject.Login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestioSessions.ItemControlNI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    ItemActionEventHandler ItemActionEvent: SpecialName
+  Methods:
+    add_ItemActionEvent(ItemActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ItemActionEvent(ItemActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    SetData(String, String, String): PrivateScope, Public, HideBySig
+    convertirData(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+Class GestioSessions.ItemControlNI+ItemActionEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(ItemControlNI, EventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(ItemControlNI, EventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask

@@ -49,7 +49,7 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsDisponibles(string estudi
 			"    FROM participants p2 "
 			"    WHERE p2.sessioId = s.id "
 			"    AND p2.estudiantUsername = '" + estudiant + "'"
-			");";
+			") GROUP BY p.sessioId;";
 		MySqlDataReader^ reader = db.executarReader(query);
 
 		conversorString cs;

@@ -41,9 +41,6 @@
     <ClInclude Include="Inici.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Register.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TxAltaSessio.h">
       <Filter>Source Files\Domini</Filter>
     </ClInclude>
@@ -95,6 +92,15 @@
     <ClInclude Include="PassarelaParticipants.h">
       <Filter>Source Files\Dades</Filter>
     </ClInclude>
+    <ClInclude Include="Registrar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxAltaEstudiant.h">
+      <Filter>Source Files\Domini</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemControlNI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -110,9 +116,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Inici.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Register.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxAltaSessio.cpp">
@@ -165,6 +168,15 @@
     </ClCompile>
     <ClCompile Include="PassarelaParticipants.cpp">
       <Filter>Source Files\Dades</Filter>
+    </ClCompile>
+    <ClCompile Include="Registrar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxAltaEstudiant.cpp">
+      <Filter>Source Files\Domini</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemControlNI.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

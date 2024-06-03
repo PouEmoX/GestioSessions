@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "MevesSessions.h"
-#include "ItemControl.h"
+#include "ItemControlNI.h"
 #include "TxVeureSessions.h"
 #include "Aux.h"
 
@@ -27,12 +27,12 @@ void MevesSessions::LoadData() {
             String^ dia = cs.convertirString(session.obteDia());
 
             // Crear un nuevo control ItemControl y establecer sus datos
-            ItemControl^ item = gcnew ItemControl();
+            ItemControlNI^ item = gcnew ItemControlNI();
             item->SetData(username, tema, dia);
 
             // Configurar la ubicación del control y agregarlo al panel
             item->Location = System::Drawing::Point(10, y);
-            item->Size = System::Drawing::Size(322, 20); // Asegurarse de que el tamaño sea adecuado
+            item->Size = System::Drawing::Size(300, 20); // Asegurarse de que el tamaño sea adecuado
             list_items->Controls->Add(item);
 
             // Incrementar la posición Y para el próximo control

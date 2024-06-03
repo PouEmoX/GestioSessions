@@ -47,7 +47,7 @@ namespace GestioSessions {
             this->label1->AutoSize = true;
             this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label1->Location = System::Drawing::Point(76, 20);
+            this->label1->Location = System::Drawing::Point(86, 20);
             this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->label1->Name = L"label1";
             this->label1->Size = System::Drawing::Size(240, 45);
@@ -108,7 +108,7 @@ namespace GestioSessions {
 
                     // Configurar la ubicación del control y agregarlo al panel
                     item->Location = System::Drawing::Point(10, y);
-                    item->Size = System::Drawing::Size(322, 20); // Asegurarse de que el tamaño sea adecuado
+                    item->Size = System::Drawing::Size(300, 20); 
                     list_items->Controls->Add(item);
 
                     // Incrementar la posición Y para el próximo control
@@ -124,5 +124,5 @@ namespace GestioSessions {
             // Recargar los datos en el panel
             LoadData();
         }
-    };
+};
 }
