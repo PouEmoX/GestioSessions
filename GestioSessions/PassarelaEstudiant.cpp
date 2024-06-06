@@ -26,7 +26,7 @@ void PassarelaEstudiant::inserta() {
 		db->executarNonQuery(sql, { {"@username", trimmedUsername}, {"@password", trimmedPassword} });
 	}
 	catch(Exception^ ex){
-		throw ex;
+		throw(ex);
 	}
 }
 

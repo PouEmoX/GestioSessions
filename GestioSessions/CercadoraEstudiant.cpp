@@ -26,10 +26,7 @@ PassarelaEstudiant CercadoraEstudiant::cercar(string estudiant, string contrasen
         return pe;
     }
     catch (Exception^ ex) {
-        throw(ex); // Re-lanzar la excepción para que la capa de presentación la maneje
-    }
-    finally {
-        db->~Database();
+        throw(ex); 
     }
     
 
