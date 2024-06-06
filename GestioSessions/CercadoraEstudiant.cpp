@@ -25,11 +25,11 @@ CercadoraEstudiant::CercadoraEstudiant(){}
 PassarelaEstudiant CercadoraEstudiant::cercar(string estudiant, string contrasenya) {
 
     
-    Database db;
+    Database^ db = Database::getInstance();
     string sql = "SELECT * FROM estudiants WHERE TRIM(username) = '" + estudiant + "' AND TRIM(password) = '" + contrasenya + "'";
 
     try {
-        MySqlDataReader^ reader = db.executarReader(sql);
+        MySqlDataReader^ reader = db->executarReader(sql);
 
         PassarelaEstudiant pe = PassarelaEstudiant();
 
@@ -38,11 +38,13 @@ PassarelaEstudiant CercadoraEstudiant::cercar(string estudiant, string contrasen
             string password = convertirString(reader["password"]->ToString());
             pe = PassarelaEstudiant(username, password);
         }
-
         return pe;
     }
     catch (Exception^ ex) {
-        throw; // Re-lanzar la excepción para que la capa de presentación la maneje
+        throw(ex); // Re-lanzar la excepción para que la capa de presentación la maneje
+    }
+    finally {
+        db->~Database();
     }
     
 

@@ -38,16 +38,19 @@ void PassarelaSessio::inserta() {
     string username = estudiant;
     string trimmedUsername = username.substr(username.find_first_not_of(' '), username.find_last_not_of(' ') - username.find_first_not_of(' ') + 1);
 
-    Database db;
+    Database^ db = Database::getInstance();
 
     string sql = "INSERT INTO sessions(creador, tema, dia) VALUES(@username, @tema, @dia)";
-    db.executarNonQuery(sql, { {"@username", trimmedUsername}, {"@tema", tema}, {"@dia", dia} });
+    db->executarNonQuery(sql, { {"@username", trimmedUsername}, {"@tema", tema}, {"@dia", dia} });
 
     sql = "SELECT LAST_INSERT_ID()";
-    int id = db.executarScalar(sql);
+    int id = db->executarScalar(sql);
 
     sql = "INSERT INTO participants (sessioId, estudiantUsername) VALUES (@sessioId, @username)";
-    db.executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
+    db->executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
+
+    db->~Database();
+
 }
 
 

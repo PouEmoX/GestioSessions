@@ -6,20 +6,21 @@
 using namespace System;
 using namespace System::Windows::Forms;
 using namespace std;
-
 using namespace MySql::Data::MySqlClient;
 
 ref class Database
 {
-protected:
-
 private:
-
-public:
+    static Database^ instance;
     String^ connectionString;
     MySqlConnection^ conn;
-    // Constructor
+
     Database();
+
+public:
+    ~Database();
+
+    static Database^ getInstance();
 
     MySqlDataReader^ executarReader(string comanda_sql);
     void executarNonQuery(string comanda_sql, map<string, string> parametros);
@@ -27,5 +28,5 @@ public:
 
     void beginTransaction(MySqlTransaction^ transaccio, MySqlConnection^ conn);
     void commitTransaction(MySqlTransaction^ transaccio);
-    void roolbackTransaction(MySqlTransaction^ transaccio);
+    void rollbackTransaction(MySqlTransaction^ transaccio);
 };

@@ -8,11 +8,11 @@ CercadoraSessio::CercadoraSessio() {}
 
 vector<PassarelaSessio> CercadoraSessio::cercarSessionsEstudiant(string estudiant) {
 	vector<PassarelaSessio> sessions;
-	Database db;
+	Database^ db = Database::getInstance();
 
 	try {
 		string query = "select creador, tema, dia from sessions s join participants p on p.sessioId = s.id where  p.estudiantUsername = '" + estudiant +"'"; 
-		MySqlDataReader^ reader = db.executarReader(query);
+		MySqlDataReader^ reader = db->executarReader(query);
 
 		conversorString cs;
 
@@ -26,10 +26,12 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsEstudiant(string estudian
 		}
 
 		reader->Close();
-		db.conn->Close();
 	}
 	catch (Exception^ ex) {
-		throw;
+		throw(ex);
+	}
+	finally {
+		db->~Database();
 	}
 
 	return sessions;
@@ -37,7 +39,7 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsEstudiant(string estudian
 
 vector<PassarelaSessio> CercadoraSessio::cercarSessionsDisponibles(string estudiant) {
 	vector<PassarelaSessio> sessions;
-	Database db;
+	Database^ db = Database::getInstance();
 
 	try {
 		string query = "SELECT s.creador, s.tema, s.dia "
@@ -50,7 +52,7 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsDisponibles(string estudi
 			"    WHERE p2.sessioId = s.id "
 			"    AND p2.estudiantUsername = '" + estudiant + "'"
 			") GROUP BY p.sessioId;";
-		MySqlDataReader^ reader = db.executarReader(query);
+		MySqlDataReader^ reader = db->executarReader(query);
 
 		conversorString cs;
 
@@ -64,21 +66,24 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsDisponibles(string estudi
 		}
 
 		reader->Close();
-		db.conn->Close();
 	}
 	catch (Exception^ ex) {
-		throw;
+		throw(ex);
+	}
+	finally {
+		db->~Database();
 	}
 
 	return sessions;
 }
 
 int CercadoraSessio::cercarId(string estudiant, string tema, string dia) {
-	Database db;
+	Database^ db = Database::getInstance();
 
 	string query = "select id from sessions where creador = '" + estudiant + "' and tema = '" + tema + "' and dia = '" + dia + "'";
 
-	int id = db.executarScalar(query);
+	int id = db->executarScalar(query);
+	db->~Database();
 
 	return id;
 }

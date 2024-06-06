@@ -18,15 +18,18 @@ void PassarelaEstudiant::inserta() {
 	string trimmedUsername = estudiant.substr(estudiant.find_first_not_of(' '), estudiant.find_last_not_of(' ') - estudiant.find_first_not_of(' ') + 1);
 	string trimmedPassword = contrasenya.substr(contrasenya.find_first_not_of(' '), contrasenya.find_last_not_of(' ') - contrasenya.find_first_not_of(' ') + 1);
 
-	Database db;
+	Database^ db = Database::getInstance();
 
 	string sql = "INSERT INTO estudiants(username, password) VALUES(@username, @password)";
 
 	try {
-		db.executarNonQuery(sql, { {"@username", trimmedUsername}, {"@password", trimmedPassword} });
+		db->executarNonQuery(sql, { {"@username", trimmedUsername}, {"@password", trimmedPassword} });
 	}
 	catch(Exception^ ex){
 		throw ex;
+	}
+	finally {
+		db->~Database();
 	}
 }
 

@@ -1,12 +1,10 @@
 #include "pch.h"
-#include "DataBase.h"
-
-#include<fstream>
+#include "Database.h"
+#include <fstream>
 #include <vcclr.h>
 
-
+// Constructor privado
 Database::Database() {
-
     // Inicializar la cadena de conexión
     String^ connection = "";
 
@@ -33,6 +31,29 @@ Database::Database() {
 
     connectionString = connection;
     conn = gcnew MySqlConnection(connectionString);
+
+    try {
+        conn->Open(); // Abrir la conexión una vez
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show("No se pudo abrir la conexión a la base de datos: " + ex->Message);
+    }
+}
+
+// Destructor
+Database::~Database() {
+    if (conn != nullptr) {
+        conn->Close();
+        conn = nullptr;
+    }
+}
+
+// Método estático para obtener la instancia de la clase
+Database^ Database::getInstance() {
+    if (instance == nullptr) {
+        instance = gcnew Database();
+    }
+    return instance;
 }
 
 MySqlDataReader^ Database::executarReader(string comanda_sql) {
@@ -41,17 +62,14 @@ MySqlDataReader^ Database::executarReader(string comanda_sql) {
     MySqlDataReader^ dataReader;
 
     try {
-        this->conn->Open();
         dataReader = cursor->ExecuteReader();
     }
     catch (Exception^ x) {
-        conn->Close();
         throw; // Re-lanzar la excepción para que la capa superior la maneje
     }
 
     return dataReader;
 }
-
 
 void Database::executarNonQuery(string comanda_sql, map<string, string> parametros) {
     String^ sql = gcnew String(comanda_sql.c_str());
@@ -65,14 +83,10 @@ void Database::executarNonQuery(string comanda_sql, map<string, string> parametr
     }
 
     try {
-        conn->Open();
         cmd->ExecuteNonQuery();
     }
     catch (Exception^ ex) {
         Console::WriteLine(ex->Message);
-    }
-    finally {
-        conn->Close();
     }
 }
 
@@ -82,23 +96,17 @@ int Database::executarScalar(std::string comanda_sql) {
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 
     try {
-        conn->Open();
         Object^ result = cmd->ExecuteScalar();
         if (result != nullptr) {
             value = Convert::ToInt32(result);
-        } else {
         }
     }
     catch (Exception^ ex) {
         throw(ex);
     }
-    finally {
-        conn->Close();
-    }
 
     return value;
 }
-
 
 void Database::beginTransaction(MySqlTransaction^ transaccio, MySqlConnection^ conn) {
     transaccio = conn->BeginTransaction();
@@ -108,12 +116,6 @@ void Database::commitTransaction(MySqlTransaction^ transaccio) {
     transaccio->Commit();
 }
 
-void Database::roolbackTransaction(MySqlTransaction^ transaccio) {
+void Database::rollbackTransaction(MySqlTransaction^ transaccio) {
     transaccio->Rollback();
 }
-
-
-
-
-
-
