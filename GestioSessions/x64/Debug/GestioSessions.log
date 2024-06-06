@@ -1,15 +1,3 @@
 ﻿  CercadoraEstudiant.cpp
-  CercadoraSessio.cpp
-  CppCLR_WinFormsProject.cpp
-  Database.cpp
-C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp(67,23): warning C4101: 'x': variable local sin referencia
-  (compilando archivo de origen "/Database.cpp")
-  
-  PassarelaEstudiant.cpp
-  PassarelaParticipants.cpp
-  PassarelaSessio.cpp
-  Registrar.cpp
-  TxLogin.cpp
-  Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestioSessions.vcxproj -> C:\Uni\Soporte ESSI\GestioSessions\x64\Debug\GestioSessions.exe
