@@ -28,9 +28,6 @@ void PassarelaEstudiant::inserta() {
 	catch(Exception^ ex){
 		throw ex;
 	}
-	finally {
-		db->~Database();
-	}
 }
 
 string PassarelaEstudiant::obteEstudiant() {

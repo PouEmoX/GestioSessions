@@ -38,15 +38,15 @@ namespace GestioSessions {
 #pragma region Windows Form Designer generated code
         void InitializeComponent(void)
         {
-            this->label1 = (gcnew System::Windows::Forms::Label());
             this->list_items = (gcnew System::Windows::Forms::Panel());
+            this->label1 = (gcnew System::Windows::Forms::Label());
             this->SuspendLayout();
             // 
             // label1
             // 
-            this->label1->AutoSize = true;
             this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
+            this->label1->AutoSize = true;
             this->label1->Location = System::Drawing::Point(86, 20);
             this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->label1->Name = L"label1";
