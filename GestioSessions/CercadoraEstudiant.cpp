@@ -23,11 +23,13 @@ PassarelaEstudiant CercadoraEstudiant::cercar(string estudiant, string contrasen
             string password = cs.convertirString(reader["password"]->ToString());
             pe = PassarelaEstudiant(username, password);
         }
+
+        reader->Close();
+
         return pe;
     }
     catch (Exception^ ex) {
         throw(ex); 
     }
-    
 
 }

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\AuthSys.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Aux.h" line="2" column="0"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;conversorString::convertirString&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;conversorString::convertirString&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Aux.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Aux.h" line="9" column="14"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Aux.cpp" line="6" column="30"/>
+            <symbol>conversorString::convertirString</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.h" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;map&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;map&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="4" column="0"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CercadoraEstudiant::cercar&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CercadoraEstudiant::cercar&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraEstudiant.h" line="8" column="21"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraEstudiant.cpp" line="10" column="40"/>
+            <symbol>CercadoraEstudiant::cercar</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;estudiant&apos; should be passed by const reference." verbose="Parameter &apos;estudiant&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraEstudiant.cpp" line="10" column="54" info="Function parameter &apos;estudiant&apos; should be passed by const reference."/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;contrasenya&apos; should be passed by const reference." verbose="Parameter &apos;contrasenya&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraEstudiant.cpp" line="10" column="72" info="Function parameter &apos;contrasenya&apos; should be passed by const reference."/>
+            <symbol>contrasenya</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.h" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.h" line="3" column="0"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CercadoraSessio::cercarSessionsEstudiant&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CercadoraSessio::cercarSessionsEstudiant&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.h" line="9" column="26"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="27" column="42"/>
+            <symbol>CercadoraSessio::cercarSessionsEstudiant</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CercadoraSessio::cercarSessionsDisponibles&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CercadoraSessio::cercarSessionsDisponibles&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.h" line="10" column="26"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="43" column="42"/>
+            <symbol>CercadoraSessio::cercarSessionsDisponibles</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CercadoraSessio::cercarId&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CercadoraSessio::cercarId&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.h" line="11" column="6"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="69" column="22"/>
+            <symbol>CercadoraSessio::cercarId</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;estudiant&apos; should be passed by const reference." verbose="Parameter &apos;estudiant&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="27" column="73" info="Function parameter &apos;estudiant&apos; should be passed by const reference."/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;estudiant&apos; should be passed by const reference." verbose="Parameter &apos;estudiant&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="43" column="75" info="Function parameter &apos;estudiant&apos; should be passed by const reference."/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;estudiant&apos; should be passed by const reference." verbose="Parameter &apos;estudiant&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="69" column="38" info="Function parameter &apos;estudiant&apos; should be passed by const reference."/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;tema&apos; should be passed by const reference." verbose="Parameter &apos;tema&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="69" column="56" info="Function parameter &apos;tema&apos; should be passed by const reference."/>
+            <symbol>tema</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;dia&apos; should be passed by const reference." verbose="Parameter &apos;dia&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercadoraSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp" line="69" column="69" info="Function parameter &apos;dia&apos; should be passed by const reference."/>
+            <symbol>dia</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.h" line="4" column="0"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;data&apos; should be passed by const reference." verbose="Parameter &apos;data&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CercarSessions.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\ItemControl.h" line="127" column="37" info="Function parameter &apos;data&apos; should be passed by const reference."/>
+            <symbol>data</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Login.h" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vcclr.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vcclr.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Login.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.h" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.h" line="2" column="0"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CtrlApuntarSessio::visualitza&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CtrlApuntarSessio::visualitza&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.h" line="11" column="26"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="9" column="44"/>
+            <symbol>CtrlApuntarSessio::visualitza</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CtrlApuntarSessio::apunta&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CtrlApuntarSessio::apunta&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.h" line="13" column="7"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="16" column="25"/>
+            <symbol>CtrlApuntarSessio::apunta</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;creador&apos; should be passed by const reference." verbose="Parameter &apos;creador&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="16" column="39" info="Function parameter &apos;creador&apos; should be passed by const reference."/>
+            <symbol>creador</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;tema&apos; should be passed by const reference." verbose="Parameter &apos;tema&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="16" column="55" info="Function parameter &apos;tema&apos; should be passed by const reference."/>
+            <symbol>tema</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;dia&apos; should be passed by const reference." verbose="Parameter &apos;dia&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="16" column="68" info="Function parameter &apos;dia&apos; should be passed by const reference."/>
+            <symbol>dia</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;auth&apos; can be declared as reference to const" verbose="Variable &apos;auth&apos; can be declared as reference to const" cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="11" column="11" info="Variable &apos;auth&apos; can be declared as reference to const"/>
+            <symbol>auth</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;auth&apos; can be declared as reference to const" verbose="Variable &apos;auth&apos; can be declared as reference to const" cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/CtrlApuntarSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp" line="18" column="11" info="Variable &apos;auth&apos; can be declared as reference to const"/>
+            <symbol>auth</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vcclr.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vcclr.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="4" column="0"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Database::executarNonQuery&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Database::executarNonQuery&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="26" column="10"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="73" column="16"/>
+            <symbol>Database::executarNonQuery</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Database::executarScalar&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Database::executarScalar&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="27" column="9"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="92" column="15"/>
+            <symbol>Database::executarScalar</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Database::beginTransaction&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Database::beginTransaction&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="29" column="10"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="110" column="16"/>
+            <symbol>Database::beginTransaction</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Database::commitTransaction&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Database::commitTransaction&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="30" column="10"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="114" column="16"/>
+            <symbol>Database::commitTransaction</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Database::rollbackTransaction&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Database::rollbackTransaction&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.h" line="31" column="10"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="118" column="16"/>
+            <symbol>Database::rollbackTransaction</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;comanda_sql&apos; should be passed by const reference." verbose="Parameter &apos;comanda_sql&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="73" column="40" info="Function parameter &apos;comanda_sql&apos; should be passed by const reference."/>
+            <symbol>comanda_sql</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;parametros&apos; should be passed by const reference." verbose="Parameter &apos;parametros&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="73" column="73" info="Function parameter &apos;parametros&apos; should be passed by const reference."/>
+            <symbol>parametros</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;comanda_sql&apos; should be passed by const reference." verbose="Parameter &apos;comanda_sql&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Database.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="92" column="42" info="Function parameter &apos;comanda_sql&apos; should be passed by const reference."/>
+            <symbol>comanda_sql</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;data&apos; should be passed by const reference." verbose="Parameter &apos;data&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/ItemControlNI.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\ItemControlNI.h" line="115" column="37" info="Function parameter &apos;data&apos; should be passed by const reference."/>
+            <symbol>data</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxVeureSessions.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\MevesSessions.cpp" line="7" column="0"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;estudiant&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;estudiant&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="6" column="2"/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;contrasenya&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;contrasenya&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="7" column="2"/>
+            <symbol>contrasenya</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;estudiant&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;estudiant&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="11" column="2"/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;contrasenya&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;contrasenya&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="12" column="2"/>
+            <symbol>contrasenya</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaEstudiant::obteEstudiant&apos; can be const." verbose="The member function &apos;PassarelaEstudiant::obteEstudiant&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.h" line="17" column="12"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="33" column="28"/>
+            <symbol>PassarelaEstudiant::obteEstudiant</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaEstudiant::obteContrasenya&apos; can be const." verbose="The member function &apos;PassarelaEstudiant::obteContrasenya&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.h" line="18" column="12"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="36" column="28"/>
+            <symbol>PassarelaEstudiant::obteContrasenya</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;sql&apos; can be reduced." verbose="The scope of the variable &apos;sql&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="23" column="9"/>
+            <symbol>sql</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="10" column="47" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="10" column="57" info="Function parameter &apos;c&apos; should be passed by const reference."/>
+            <symbol>c</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="40" column="47" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="43" column="49" info="Function parameter &apos;c&apos; should be passed by const reference."/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PassarelaParticipants::idSessio&apos; is not initialized in the constructor." verbose="Member variable &apos;PassarelaParticipants::idSessio&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaParticipants.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="5" column="24"/>
+            <symbol>PassarelaParticipants::idSessio</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;estudiant&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;estudiant&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaParticipants.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="9" column="2"/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaParticipants::obteId&apos; can be const." verbose="The member function &apos;PassarelaParticipants::obteId&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaParticipants.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.h" line="18" column="6"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="23" column="28"/>
+            <symbol>PassarelaParticipants::obteId</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaParticipants::obteEstudiant&apos; can be const." verbose="The member function &apos;PassarelaParticipants::obteEstudiant&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaParticipants.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.h" line="19" column="9"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="26" column="31"/>
+            <symbol>PassarelaParticipants::obteEstudiant</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaParticipants.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="7" column="61" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaParticipants.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="33" column="50" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;estudiant&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;estudiant&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="6" column="5"/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;tema&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;tema&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="7" column="5"/>
+            <symbol>tema</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;dia&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;dia&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="8" column="5"/>
+            <symbol>dia</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;estudiant&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;estudiant&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="12" column="5"/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;tema&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;tema&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="13" column="5"/>
+            <symbol>tema</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;dia&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;dia&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="14" column="5"/>
+            <symbol>dia</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaSessio::obteEstudiant&apos; can be const." verbose="The member function &apos;PassarelaSessio::obteEstudiant&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.h" line="18" column="12"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="16" column="25"/>
+            <symbol>PassarelaSessio::obteEstudiant</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaSessio::obteTema&apos; can be const." verbose="The member function &apos;PassarelaSessio::obteTema&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.h" line="19" column="12"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="19" column="25"/>
+            <symbol>PassarelaSessio::obteTema</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;PassarelaSessio::obteDia&apos; can be const." verbose="The member function &apos;PassarelaSessio::obteDia&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.h" line="20" column="12"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="22" column="25"/>
+            <symbol>PassarelaSessio::obteDia</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="11" column="41" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;t&apos; should be passed by const reference." verbose="Parameter &apos;t&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="11" column="52" info="Function parameter &apos;t&apos; should be passed by const reference."/>
+            <symbol>t</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;d&apos; should be passed by const reference." verbose="Parameter &apos;d&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="11" column="62" info="Function parameter &apos;d&apos; should be passed by const reference."/>
+            <symbol>d</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="26" column="44" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;t&apos; should be passed by const reference." verbose="Parameter &apos;t&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="29" column="39" info="Function parameter &apos;t&apos; should be passed by const reference."/>
+            <symbol>t</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;d&apos; should be passed by const reference." verbose="Parameter &apos;d&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/PassarelaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="32" column="38" info="Function parameter &apos;d&apos; should be passed by const reference."/>
+            <symbol>d</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.h" line="2" column="0"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Sessio::get_estudiant&apos; can be const." verbose="The member function &apos;Sessio::get_estudiant&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Sessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.h" line="17" column="9"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="10" column="16"/>
+            <symbol>Sessio::get_estudiant</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Sessio::get_tema&apos; can be const." verbose="The member function &apos;Sessio::get_tema&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Sessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.h" line="18" column="9"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="13" column="16"/>
+            <symbol>Sessio::get_tema</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Sessio::get_dia&apos; can be const." verbose="The member function &apos;Sessio::get_dia&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Sessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.h" line="19" column="9"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="16" column="16"/>
+            <symbol>Sessio::get_dia</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;dia&apos; should be passed by const reference." verbose="Parameter &apos;dia&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/Sessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="4" column="54" info="Function parameter &apos;dia&apos; should be passed by const reference."/>
+            <symbol>dia</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;username&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;username&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp" line="6" column="2"/>
+            <symbol>username</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;contrasenya&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;contrasenya&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp" line="7" column="2"/>
+            <symbol>contrasenya</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;TxAltaEstudiant::Executa&apos; can be const." verbose="The member function &apos;TxAltaEstudiant::Executa&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.h" line="13" column="7"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp" line="10" column="23"/>
+            <symbol>TxAltaEstudiant::Executa</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;u&apos; should be passed by const reference." verbose="Parameter &apos;u&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp" line="5" column="41" info="Function parameter &apos;u&apos; should be passed by const reference."/>
+            <symbol>u</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaEstudiant.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp" line="5" column="51" info="Function parameter &apos;c&apos; should be passed by const reference."/>
+            <symbol>c</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;dia&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;dia&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp" line="6" column="2"/>
+            <symbol>dia</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;tema&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;tema&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp" line="7" column="2"/>
+            <symbol>tema</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;t&apos; should be passed by const reference." verbose="Parameter &apos;t&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp" line="5" column="35" info="Function parameter &apos;t&apos; should be passed by const reference."/>
+            <symbol>t</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;d&apos; should be passed by const reference." verbose="Parameter &apos;d&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp" line="5" column="45" info="Function parameter &apos;d&apos; should be passed by const reference."/>
+            <symbol>d</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;auth&apos; can be declared as reference to const" verbose="Variable &apos;auth&apos; can be declared as reference to const" cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxAltaSessio.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp" line="11" column="11" info="Variable &apos;auth&apos; can be declared as reference to const"/>
+            <symbol>auth</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;estudiant&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;estudiant&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxLogin.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp" line="6" column="5"/>
+            <symbol>estudiant</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;contrasenya&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;contrasenya&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxLogin.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp" line="7" column="5"/>
+            <symbol>contrasenya</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;TxLogin::Executa&apos; can be const." verbose="The member function &apos;TxLogin::Executa&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxLogin.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.h" line="13" column="7"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp" line="10" column="15"/>
+            <symbol>TxLogin::Executa</symbol>
+        </error>
+        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxLogin.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp" line="29" column="9"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;e&apos; should be passed by const reference." verbose="Parameter &apos;e&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxLogin.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp" line="5" column="25" info="Function parameter &apos;e&apos; should be passed by const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxLogin.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp" line="5" column="35" info="Function parameter &apos;c&apos; should be passed by const reference."/>
+            <symbol>c</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;TxVeureSessions::Executa&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;TxVeureSessions::Executa&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxVeureSessions.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxVeureSessions.h" line="11" column="26"/>
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxVeureSessions.cpp" line="8" column="42"/>
+            <symbol>TxVeureSessions::Executa</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;auth&apos; can be declared as reference to const" verbose="Variable &apos;auth&apos; can be declared as reference to const" cwe="398" file0="C:/Uni/Soporte ESSI/GestioSessions/GestioSessions/TxVeureSessions.cpp">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxVeureSessions.cpp" line="10" column="11" info="Variable &apos;auth&apos; can be declared as reference to const"/>
+            <symbol>auth</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;beginTransaction&apos; is never used." verbose="The function &apos;beginTransaction&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="110" column="0"/>
+            <symbol>beginTransaction</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;commitTransaction&apos; is never used." verbose="The function &apos;commitTransaction&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="114" column="0"/>
+            <symbol>commitTransaction</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rollbackTransaction&apos; is never used." verbose="The function &apos;rollbackTransaction&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp" line="118" column="0"/>
+            <symbol>rollbackTransaction</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;posaEstudiant&apos; is never used." verbose="The function &apos;posaEstudiant&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="40" column="0"/>
+            <symbol>posaEstudiant</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;posaContrasenya&apos; is never used." verbose="The function &apos;posaContrasenya&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp" line="43" column="0"/>
+            <symbol>posaContrasenya</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;obteId&apos; is never used." verbose="The function &apos;obteId&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="23" column="0"/>
+            <symbol>obteId</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;posaId&apos; is never used." verbose="The function &apos;posaId&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaParticipants.cpp" line="30" column="0"/>
+            <symbol>posaId</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;posaTema&apos; is never used." verbose="The function &apos;posaTema&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="29" column="0"/>
+            <symbol>posaTema</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;posaDia&apos; is never used." verbose="The function &apos;posaDia&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp" line="32" column="0"/>
+            <symbol>posaDia</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_estudiant&apos; is never used." verbose="The function &apos;get_estudiant&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="10" column="0"/>
+            <symbol>get_estudiant</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_tema&apos; is never used." verbose="The function &apos;get_tema&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="13" column="0"/>
+            <symbol>get_tema</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_dia&apos; is never used." verbose="The function &apos;get_dia&apos; is never used." cwe="561">
+            <location file="C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp" line="16" column="0"/>
+            <symbol>get_dia</symbol>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: 172/592 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 172/592 (use --checkers-report=&lt;filename&gt; to see details)"/>
+    </errors>
+</results>

@@ -265,11 +265,11 @@ namespace CppCLRWinFormsProject {
 				inici->Show();
 			}
 			else {
-				MessageBox::Show("Usuario o contraseña incorrectos");
+				MessageBox::Show("Usuari o contrasenya incorrectes");
 			}
 		}
 		catch (Exception^ ex) {
-			MessageBox::Show("Error al iniciar sesión: " + ex->Message);
+			MessageBox::Show("Error al iniciar sessió: " + ex->Message);
 		}
 	}
 

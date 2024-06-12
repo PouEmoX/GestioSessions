@@ -45,16 +45,10 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsDisponibles(string estudi
     Database^ db = Database::getInstance();
 
     try {
-        string query = "SELECT s.creador, s.tema, s.dia "
-            "FROM sessions s "
-            "JOIN participants p ON p.sessioId = s.id "
-            "WHERE p.estudiantUsername <> '" + estudiant + "' "
-            "AND NOT EXISTS ("
-            "    SELECT 1 "
-            "    FROM participants p2 "
-            "    WHERE p2.sessioId = s.id "
-            "    AND p2.estudiantUsername = '" + estudiant + "'"
-            ") GROUP BY p.sessioId;";
+        string query = "select s.creador, s.tema, s.dia from sessions s join participants p ON p.sessioId = s.id "
+            "where p.estudiantUsername <> '" + estudiant + "' and not exists ("
+            "    select 1 from participants p2 where p2.sessioId = s.id and p2.estudiantUsername = '" + estudiant + "'"
+            ") group by p.sessioId;";
         MySqlDataReader^ reader = db->executarReader(query);
         sessions = fetchSessionsFromReader(reader);
     }

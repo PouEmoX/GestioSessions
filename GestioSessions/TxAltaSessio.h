@@ -1,5 +1,8 @@
 #pragma once
 #include "PassarelaSessio.h"
+#include<iostream>
+
+using namespace std;
 
 class TxAltaSessio
 {

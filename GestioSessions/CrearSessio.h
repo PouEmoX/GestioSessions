@@ -1,5 +1,6 @@
 #pragma once
 #include "TxAltaSessio.h"
+#include "Aux.h"
 
 namespace GestioSessions {
 
@@ -151,7 +152,7 @@ namespace GestioSessions {
 
 		}
 #pragma endregion
-
+		/*
 	std::string convertirString(System::String^ strNet) {
 		// Obtener la longitud del string .NET
 		int length = strNet->Length;
@@ -176,9 +177,10 @@ namespace GestioSessions {
 		// Retornar el std::string convertido
 		return strStd;
 	}
-
+	*/
 	private: System::Void btn_creaSessio_Click(System::Object^ sender, System::EventArgs^ e) {
-		TxAltaSessio tAS(convertirString(txt_tema->Text), convertirString(txt_dia->Text));
+		conversorString cs;
+		TxAltaSessio tAS(cs.convertirString(txt_tema->Text), cs.convertirString(txt_dia->Text));
 
 		try {
 			tAS.Executa();

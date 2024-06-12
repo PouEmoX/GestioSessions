@@ -2,6 +2,8 @@
 #include "TxAltaSessio.h"
 #include "AuthSys.h"
 
+using namespace System;
+
 TxAltaSessio::TxAltaSessio(string t, string d) {
 	dia = d;
 	tema = t;
@@ -10,6 +12,11 @@ TxAltaSessio::TxAltaSessio(string t, string d) {
 void TxAltaSessio::Executa() {
 	AuthSys& auth = AuthSys::getInstance();
 	PassarelaSessio ps(auth.getUsername(), tema, dia);
-	ps.inserta();
+	try {
+		ps.inserta();
+	}
+	catch(Exception^ ex) {
+		throw(ex);
+	}
 }
 

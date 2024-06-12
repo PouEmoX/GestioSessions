@@ -9,12 +9,11 @@ Database::Database() {
     String^ connection = "";
 
     ifstream config;
-    String^ configPath = "..\\config.txt";
 
     config.open("..\\config.txt", ios::in);
 
     if (config.fail()) {
-        MessageBox::Show("Imposible acceder a la información de la base de datos");
+        //MessageBox::Show("Imposible acceder a la información de la base de datos");
     }
     else {
         while (!config.eof()) {
@@ -36,7 +35,8 @@ Database::Database() {
         conn->Open(); // Abrir la conexión una vez
     }
     catch (Exception^ ex) {
-        MessageBox::Show("No se pudo abrir la conexión a la base de datos: " + ex->Message);
+        //MessageBox::Show("No se pudo abrir la conexión a la base de datos: " + ex->Message);
+        throw("No es pot obrir la conexió amb la base de dades:" + ex);
     }
 }
 
@@ -86,7 +86,7 @@ void Database::executarNonQuery(string comanda_sql, map<string, string> parametr
         cmd->ExecuteNonQuery();
     }
     catch (Exception^ ex) {
-        Console::WriteLine(ex->Message);
+        throw(ex);
     }
 }
 
