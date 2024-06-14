@@ -47,7 +47,7 @@ namespace GestioSessions {
             this->list_items->Location = System::Drawing::Point(11, 67);
             this->list_items->Margin = System::Windows::Forms::Padding(2);
             this->list_items->Name = L"list_items";
-            this->list_items->Size = System::Drawing::Size(600, 288);
+            this->list_items->Size = System::Drawing::Size(615, 450);
             this->list_items->TabIndex = 2;
             // 
             // label1

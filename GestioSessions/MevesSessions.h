@@ -62,7 +62,7 @@ namespace GestioSessions {
             this->list_items->Location = System::Drawing::Point(9, 68);
             this->list_items->Margin = System::Windows::Forms::Padding(2);
             this->list_items->Name = L"list_items";
-            this->list_items->Size = System::Drawing::Size(610, 500);
+            this->list_items->Size = System::Drawing::Size(610, 450);
             this->list_items->TabIndex = 1;
             // 
             // MevesSessions

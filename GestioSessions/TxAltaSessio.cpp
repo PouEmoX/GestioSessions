@@ -12,6 +12,7 @@ TxAltaSessio::TxAltaSessio(string t, string d) {
 void TxAltaSessio::Executa() {
 	AuthSys& auth = AuthSys::getInstance();
 	PassarelaSessio ps(auth.getUsername(), tema, dia);
+
 	try {
 		ps.inserta();
 	}

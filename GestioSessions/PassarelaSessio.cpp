@@ -2,6 +2,8 @@
 #include "PassarelaSessio.h"
 #include "Database.h"
 
+using namespace System;
+
 PassarelaSessio::PassarelaSessio() {
     estudiant = "";
     tema = "";
@@ -51,7 +53,7 @@ void PassarelaSessio::inserta() {
         db->executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
     }
     catch (Exception^ ex) {
-        throw("Error al afegir informació a la base de dades:" + ex);
+        throw gcnew Exception("Error al afegir informació a la base de dades");
     }
 }
 
