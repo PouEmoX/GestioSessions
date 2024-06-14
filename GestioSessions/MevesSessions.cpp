@@ -32,11 +32,14 @@ void MevesSessions::LoadData() {
 
             // Configurar la ubicación del control y agregarlo al panel
             item->Location = System::Drawing::Point(10, y);
-            item->Size = System::Drawing::Size(300, 20); // Asegurarse de que el tamaño sea adecuado
+            item->Size = System::Drawing::Size(315, 30); // Asegurarse de que el tamaño sea adecuado
             list_items->Controls->Add(item);
 
             // Incrementar la posición Y para el próximo control
-            y += item->Height;
+            y += item->Height + 10;
+
+            list_items->Invalidate();
+            list_items->Update();
         }
     }
     catch (System::Exception^ ex) {

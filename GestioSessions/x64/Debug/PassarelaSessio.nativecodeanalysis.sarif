@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/passarelasessio.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f4b3fc8f7564865b17e70b595025ee707f5272765fd47471ea4b9bd1ce00f99d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/pch.h"
+          },
+          "hashes": {
+            "sha-256": "7e9de1274d4f70a1d691a27a2b83c598aa48de9677bc8c9edff2e07675464bec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/passarelasessio.h"
+          },
+          "hashes": {
+            "sha-256": "89a22d919fbf6394a945466f5653e3ab347a5f675ae488b4ff5ddff995273362"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/database.h"
+          },
+          "hashes": {
+            "sha-256": "b4af7b0665677959f94c709f87988d4d4a182a81a029f3865c66fd080bea766f"
+          }
+        }
+      ]
+    }
+  ]
+}

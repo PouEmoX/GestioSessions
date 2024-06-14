@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/txaltasessio.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "ba8230b00731b398f15b44623eae18a56993ec5fa39df640f116875c65b75ea7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/pch.h"
+          },
+          "hashes": {
+            "sha-256": "7e9de1274d4f70a1d691a27a2b83c598aa48de9677bc8c9edff2e07675464bec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/txaltasessio.h"
+          },
+          "hashes": {
+            "sha-256": "2930dc77e15c6e1b64e5d8289d53e606a7aa6b7a62939da683f6d0038856d4dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/passarelasessio.h"
+          },
+          "hashes": {
+            "sha-256": "89a22d919fbf6394a945466f5653e3ab347a5f675ae488b4ff5ddff995273362"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/authsys.h"
+          },
+          "hashes": {
+            "sha-256": "90dfebbdad4da62a1210b506e6af1a66ccc23d2b3b6ac0a4463dc48fc0044e69"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/authsys.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e93ae2fc855a279af749cbef344dda8e031c902c1ae66bac33b39bbc464e6cd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/pch.h"
+          },
+          "hashes": {
+            "sha-256": "7e9de1274d4f70a1d691a27a2b83c598aa48de9677bc8c9edff2e07675464bec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/authsys.h"
+          },
+          "hashes": {
+            "sha-256": "90dfebbdad4da62a1210b506e6af1a66ccc23d2b3b6ac0a4463dc48fc0044e69"
+          }
+        }
+      ]
+    }
+  ]
+}

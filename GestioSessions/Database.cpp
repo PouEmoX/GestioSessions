@@ -13,7 +13,7 @@ Database::Database() {
     config.open("..\\config.txt", ios::in);
 
     if (config.fail()) {
-        //MessageBox::Show("Imposible acceder a la información de la base de datos");
+        throw("Imposible accedir a l'informació de la base de dades");
     }
     else {
         while (!config.eof()) {
@@ -35,8 +35,7 @@ Database::Database() {
         conn->Open(); // Abrir la conexión una vez
     }
     catch (Exception^ ex) {
-        //MessageBox::Show("No se pudo abrir la conexión a la base de datos: " + ex->Message);
-        throw("No es pot obrir la conexió amb la base de dades:" + ex);
+        throw("No es pot obrir la conexió amb la base de dades: " + ex);
     }
 }
 
@@ -46,6 +45,7 @@ Database::~Database() {
         conn->Close();
         conn = nullptr;
     }
+    instance = nullptr;
 }
 
 // Método estático para obtener la instancia de la clase
@@ -65,7 +65,7 @@ MySqlDataReader^ Database::executarReader(string comanda_sql) {
         dataReader = cursor->ExecuteReader();
     }
     catch (Exception^ x) {
-        throw; // Re-lanzar la excepción para que la capa superior la maneje
+        throw(x); 
     }
 
     return dataReader;

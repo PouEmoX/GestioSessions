@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/crearsessio.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "649d72f7f3d6279acae588cf9dc133a499c9dd83792cfe81dd2425c1cdb308a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/pch.h"
+          },
+          "hashes": {
+            "sha-256": "7e9de1274d4f70a1d691a27a2b83c598aa48de9677bc8c9edff2e07675464bec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/crearsessio.h"
+          },
+          "hashes": {
+            "sha-256": "dcda08186bdd490dc1aa90ee837e80d78d351d802d9665c5637d83dab8725c69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/txaltasessio.h"
+          },
+          "hashes": {
+            "sha-256": "2930dc77e15c6e1b64e5d8289d53e606a7aa6b7a62939da683f6d0038856d4dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/passarelasessio.h"
+          },
+          "hashes": {
+            "sha-256": "89a22d919fbf6394a945466f5653e3ab347a5f675ae488b4ff5ddff995273362"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/uni/soporte essi/gestiosessions/gestiosessions/aux.h"
+          },
+          "hashes": {
+            "sha-256": "641bbaea38d47bc1c53e516211051dcdbff3eb2e902b87056f0a41fbbb457a8c"
+          }
+        }
+      ]
+    }
+  ]
+}
