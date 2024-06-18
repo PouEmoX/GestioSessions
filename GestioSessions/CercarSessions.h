@@ -78,7 +78,7 @@ namespace GestioSessions {
         }
 #pragma endregion
     private:
-        void LoadData() {
+        void CercarSessions::LoadData() {
             try {
                 // Limpiar los controles actuales en el panel
                 list_items->Controls->Clear();
@@ -107,27 +107,23 @@ namespace GestioSessions {
 
                     // Configurar la ubicación del control y agregarlo al panel
                     item->Location = System::Drawing::Point(10, y);
-                    item->Size = System::Drawing::Size(315, 30); // Ajustar el tamaño del control
-                    item->Margin = System::Windows::Forms::Padding(0); // Eliminar el margen
+                    item->Size = System::Drawing::Size(500, 50); // Ajustar el tamaño según el diseño de ItemControl
                     list_items->Controls->Add(item);
 
                     // Incrementar la posición Y para el próximo control
-                    y += item->Height + 10;
+                    y += item->Height + 10; // Asegurar que el espacio entre controles sea constante
                 }
-
-                // No ajustar la altura del panel
-                // Forzar el redibujo del panel
-                list_items->Invalidate();
-                list_items->Update();
             }
             catch (System::Exception^ ex) {
                 MessageBox::Show("Error: " + ex->Message);
             }
         }
 
-        void OnItemAction(ItemControl^ sender, EventArgs^ e) {
+
+        void CercarSessions::OnItemAction(ItemControl^ sender, EventArgs^ e) {
             // Recargar los datos en el panel
             LoadData();
         }
+
     };
 }

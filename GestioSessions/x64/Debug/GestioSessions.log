@@ -1,6 +1,8 @@
 ﻿  CercarSessions.cpp
   CppCLR_WinFormsProject.cpp
   Inici.cpp
+  ItemControl.cpp
+  MevesSessions.cpp
   Registrar.cpp
   Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo

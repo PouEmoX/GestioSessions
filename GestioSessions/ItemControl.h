@@ -51,7 +51,7 @@ namespace GestioSessions {
             this->lbl_username->AutoSize = true;
             this->lbl_username->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->lbl_username->Location = System::Drawing::Point(8, 8);
+            this->lbl_username->Location = System::Drawing::Point(18, 10);
             this->lbl_username->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->lbl_username->Name = L"lbl_username";
             this->lbl_username->Size = System::Drawing::Size(45, 19);
@@ -63,7 +63,7 @@ namespace GestioSessions {
             this->lbl_Tema->AutoSize = true;
             this->lbl_Tema->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->lbl_Tema->Location = System::Drawing::Point(90, 8);
+            this->lbl_Tema->Location = System::Drawing::Point(104, 10);
             this->lbl_Tema->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->lbl_Tema->Name = L"lbl_Tema";
             this->lbl_Tema->Size = System::Drawing::Size(45, 19);
@@ -75,7 +75,7 @@ namespace GestioSessions {
             this->lbl_dia->AutoSize = true;
             this->lbl_dia->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->lbl_dia->Location = System::Drawing::Point(172, 8);
+            this->lbl_dia->Location = System::Drawing::Point(212, 10);
             this->lbl_dia->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->lbl_dia->Name = L"lbl_dia";
             this->lbl_dia->Size = System::Drawing::Size(45, 19);
@@ -87,10 +87,10 @@ namespace GestioSessions {
             this->btn_action->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
             this->btn_action->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->btn_action->Location = System::Drawing::Point(255, 4);
+            this->btn_action->Location = System::Drawing::Point(398, 8);
             this->btn_action->Margin = System::Windows::Forms::Padding(2);
             this->btn_action->Name = L"btn_action";
-            this->btn_action->Size = System::Drawing::Size(60, 26);
+            this->btn_action->Size = System::Drawing::Size(86, 26);
             this->btn_action->TabIndex = 3;
             this->btn_action->Text = L"Apunta\'m";
             this->btn_action->UseVisualStyleBackColor = true;
@@ -98,15 +98,14 @@ namespace GestioSessions {
             // 
             // ItemControl
             // 
-            this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-            this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+            this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
             this->Controls->Add(this->btn_action);
             this->Controls->Add(this->lbl_dia);
             this->Controls->Add(this->lbl_Tema);
             this->Controls->Add(this->lbl_username);
             this->Margin = System::Windows::Forms::Padding(2);
             this->Name = L"ItemControl";
-            this->Size = System::Drawing::Size(322, 34);
+            this->Size = System::Drawing::Size(500, 42);
             this->ResumeLayout(false);
             this->PerformLayout();
 
@@ -137,18 +136,18 @@ namespace GestioSessions {
         }
 
 #pragma endregion
-private: System::Void btn_action_Click(System::Object^ sender, System::EventArgs^ e) {
-    conversorString cs;
-    CtrlApuntarSessio cAS;
+    private: System::Void btn_action_Click(System::Object^ sender, System::EventArgs^ e) {
+        conversorString cs;
+        CtrlApuntarSessio cAS;
 
-    string fechaHoraConvertida = convertirData(cs.convertirString(lbl_dia->Text));
+        string fechaHoraConvertida = convertirData(cs.convertirString(lbl_dia->Text));
 
-    cAS.apunta(cs.convertirString(lbl_username->Text), cs.convertirString(lbl_Tema->Text), fechaHoraConvertida);
+        cAS.apunta(cs.convertirString(lbl_username->Text), cs.convertirString(lbl_Tema->Text), fechaHoraConvertida);
 
-    ItemActionEvent(this, EventArgs::Empty);
-}
+        ItemActionEvent(this, EventArgs::Empty);
+    }
 
 
 
-};
+    };
 }

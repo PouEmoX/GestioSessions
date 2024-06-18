@@ -53,7 +53,7 @@ void PassarelaSessio::inserta() {
         db->executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
     }
     catch (Exception^ ex) {
-        throw gcnew Exception("Dades introduïdes no valides");
+        throw gcnew Exception("Dades introduïdes no vàlides");
     }
 }
 

@@ -164,17 +164,22 @@ namespace GestioSessions {
 		String^ horaFormatada = Hora->Value.ToString("HH:mm");
 		TxAltaSessio tAS(cs.convertirString(txt_tema->Text), cs.convertirString(diaFormatat + " " + horaFormatada));
 
-		try {
-			tAS.Executa();
-			MessageBox::Show("Sessió creada exitosament.");
+		if (txt_tema->Text == "") {
+			MessageBox::Show("Has de possar un tema");
 		}
-		catch (Exception^ ex) {
-			MessageBox::Show("Error al crear la sessió: " + ex->Message);
-		}
-		finally {
-			txt_tema->Text = "";
-			Data->Value = DateTime::Now;
-			Hora->Value = DateTime::Parse("00:00");
+		else {
+			try {
+				tAS.Executa();
+				MessageBox::Show("Sessió creada exitosament.");
+			}
+			catch (Exception^ ex) {
+				MessageBox::Show("Error al crear la sessió: " + ex->Message);
+			}
+			finally {
+				txt_tema->Text = "";
+				Data->Value = DateTime::Now;
+				Hora->Value = DateTime::Parse("00:00");
+			}
 		}
 	}
 	};
