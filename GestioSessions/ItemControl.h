@@ -125,11 +125,13 @@ namespace GestioSessions {
         }
 
         string convertirData(string data) {
+            // Asumimos que el formato de entrada es dd/mm/yyyy hh:mm:ss
             string dd = data.substr(0, 2);
             string mm = data.substr(3, 2);
             string yyyy = data.substr(6, 4);
+            string time = data.substr(11); // Extrae la parte de la hora
 
-            string dataConvertida = yyyy + "-" + mm + "-" + dd;
+            string dataConvertida = yyyy + "-" + mm + "-" + dd + " " + time;
 
             return dataConvertida;
         }
@@ -139,10 +141,13 @@ private: System::Void btn_action_Click(System::Object^ sender, System::EventArgs
     conversorString cs;
     CtrlApuntarSessio cAS;
 
-    cAS.apunta(cs.convertirString(lbl_username->Text), cs.convertirString(lbl_Tema->Text), convertirData(cs.convertirString(lbl_dia->Text)));
+    string fechaHoraConvertida = convertirData(cs.convertirString(lbl_dia->Text));
+
+    cAS.apunta(cs.convertirString(lbl_username->Text), cs.convertirString(lbl_Tema->Text), fechaHoraConvertida);
 
     ItemActionEvent(this, EventArgs::Empty);
 }
+
 
 
 };

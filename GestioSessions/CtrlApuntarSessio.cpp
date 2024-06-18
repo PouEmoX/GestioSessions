@@ -6,11 +6,19 @@
 
 CtrlApuntarSessio::CtrlApuntarSessio(){}
 
-vector<PassarelaSessio> CtrlApuntarSessio::visualitza(){
+vector<SessioInfo> CtrlApuntarSessio::visualitza(){
 	CercadoraSessio cercadora;
 	AuthSys& auth = AuthSys::getInstance();
 	vector<PassarelaSessio> sessions = cercadora.cercarSessionsDisponibles(auth.getUsername());
-	return sessions;
+	std::vector<SessioInfo> sessioInfo;
+	for (const auto& sessio : sessions) {
+		sessioInfo.push_back({
+			sessio.obteEstudiant(),
+			sessio.obteTema(),
+			sessio.obteDia()
+			});
+	}
+	return sessioInfo;
 }
 
 void CtrlApuntarSessio::apunta(string creador, string tema, string dia) {

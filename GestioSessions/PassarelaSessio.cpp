@@ -15,13 +15,13 @@ PassarelaSessio::PassarelaSessio(string e,  string t, string d) {
     tema = t;
     dia = d;
 }
-string PassarelaSessio::obteEstudiant() {
+string PassarelaSessio::obteEstudiant() const{
     return estudiant;
 }
-string PassarelaSessio::obteTema() {
+string PassarelaSessio::obteTema() const{
     return tema;
 }
-string PassarelaSessio::obteDia() {
+string PassarelaSessio::obteDia() const{
     return dia;
 }
 
@@ -53,7 +53,7 @@ void PassarelaSessio::inserta() {
         db->executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
     }
     catch (Exception^ ex) {
-        throw gcnew Exception("Error al afegir informació a la base de dades");
+        throw gcnew Exception("Dades introduïdes no valides");
     }
 }
 

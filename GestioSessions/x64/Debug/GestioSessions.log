@@ -1,3 +1,7 @@
-﻿  PassarelaSessio.cpp
+﻿  CercarSessions.cpp
+  CppCLR_WinFormsProject.cpp
+  Inici.cpp
+  Registrar.cpp
+  Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestioSessions.vcxproj -> C:\Uni\Soporte ESSI\GestioSessions\x64\Debug\GestioSessions.exe

@@ -84,7 +84,7 @@ namespace GestioSessions {
                 list_items->Controls->Clear();
 
                 CtrlApuntarSessio controlador;
-                vector<PassarelaSessio> sessions = controlador.visualitza();
+                vector<SessioInfo> sessions = controlador.visualitza();
 
                 // Inicializar la posición Y para los controles
                 int y = 10;
@@ -92,11 +92,11 @@ namespace GestioSessions {
                 conversorString cs;
 
                 // Recorrer los resultados de la transacción
-                for (PassarelaSessio session : sessions) {
+                for (const auto& sessio : sessions) {
                     // Convertir los datos a System::String^
-                    String^ username = cs.convertirString(session.obteEstudiant());
-                    String^ tema = cs.convertirString(session.obteTema());
-                    String^ dia = cs.convertirString(session.obteDia());
+                    String^ username = cs.convertirString(sessio.username.c_str());
+                    String^ tema = cs.convertirString(sessio.tema.c_str());
+                    String^ dia = cs.convertirString(sessio.dia.c_str());
 
                     // Crear un nuevo control ItemControl y establecer sus datos
                     ItemControl^ item = gcnew ItemControl();

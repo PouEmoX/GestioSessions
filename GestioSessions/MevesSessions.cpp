@@ -12,7 +12,7 @@ void MevesSessions::LoadData() {
     try {
         // Crear una instancia de la transacción TxVeureSessions
         TxVeureSessions tx;
-        vector<PassarelaSessio> sessions = tx.Executa();
+        vector<SessioData> sessions = tx.Executa();
 
         // Inicializar la posición Y para los controles
         int y = 10;
@@ -20,11 +20,11 @@ void MevesSessions::LoadData() {
         conversorString cs;
 
         // Recorrer los resultados de la transacción
-        for (PassarelaSessio session : sessions) {
+        for (const auto& sessio : sessions) {
             // Convertir los datos a System::String^
-            String^ username = cs.convertirString(session.obteEstudiant());
-            String^ tema = cs.convertirString(session.obteTema());
-            String^ dia = cs.convertirString(session.obteDia());
+            String^ username = cs.convertirString(sessio.username.c_str());
+            String^ tema = cs.convertirString(sessio.tema.c_str());
+            String^ dia = cs.convertirString(sessio.dia.c_str());
 
             // Crear un nuevo control ItemControl y establecer sus datos
             ItemControlNI^ item = gcnew ItemControlNI();

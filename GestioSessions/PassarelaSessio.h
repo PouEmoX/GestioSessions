@@ -15,9 +15,9 @@ public:
 
     void inserta();
 
-    string obteEstudiant();
-    string obteTema();
-    string obteDia();
+    string obteEstudiant() const;
+    string obteTema() const;
+    string obteDia() const;
 
     void posaEstudiant(string e);
     void posaTema(string t);

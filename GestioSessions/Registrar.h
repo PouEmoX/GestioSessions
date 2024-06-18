@@ -220,7 +220,7 @@ namespace GestioSessions {
 				tAS.Executa();
 			}
 			catch(Exception^ ex){
-				MessageBox::Show("Error al crear usuari: ", ex->Message);
+				MessageBox::Show("Error al crear usuari: " + ex->Message);
 			}
 			LoadLogin(sender, e);
 		}

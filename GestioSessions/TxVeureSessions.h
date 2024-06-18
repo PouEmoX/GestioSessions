@@ -1,13 +1,17 @@
 #pragma once
 #include "PassarelaSessio.h"
-#include<vector>
+#include <vector>
+#include <string>
 
-class TxVeureSessions
-{
-private:
-public:
-	TxVeureSessions();
-
-	vector<PassarelaSessio> Executa();
+struct SessioData {
+    string username;
+    string tema;
+    string dia;
 };
 
+class TxVeureSessions {
+public:
+    TxVeureSessions();
+
+    std::vector<SessioData> Executa();
+};

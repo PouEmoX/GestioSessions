@@ -3,12 +3,18 @@
 
 #include<vector>
 
+struct SessioInfo {
+	string username;
+	string tema;
+	string dia;
+};
+
 class CtrlApuntarSessio
 {
 public:
 	CtrlApuntarSessio();
 
-	vector<PassarelaSessio> visualitza();
+	vector<SessioInfo> visualitza();
 
 	void apunta(string creador, string tema, string dia);
 };

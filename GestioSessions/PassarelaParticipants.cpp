@@ -17,7 +17,6 @@ void PassarelaParticipants::inserta() {
 	Database^ db = Database::getInstance();
 	string sql = "INSERT INTO participants (sessioId, estudiantUsername) VALUES (@sessioId, @username)";
 	db->executarNonQuery(sql, { {"@sessioId", to_string(idSessio)}, {"@username", trimmedUsername} });
-
 }
 
 int PassarelaParticipants::obteId() {

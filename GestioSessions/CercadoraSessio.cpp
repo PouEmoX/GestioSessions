@@ -34,9 +34,9 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsEstudiant(string estudian
         sessions = fetchSessionsFromReader(reader);
     }
     catch (Exception^ ex) {
-        throw(ex);
+        throw gcnew Exception("Impossible accedir a l'informació de les sessions");
     }
-
+    db->~Database();
     return sessions;
 }
 
@@ -53,9 +53,9 @@ vector<PassarelaSessio> CercadoraSessio::cercarSessionsDisponibles(string estudi
         sessions = fetchSessionsFromReader(reader);
     }
     catch (Exception^ ex) {
-        throw(ex);
+        throw gcnew Exception("Impossible accedir a l'informació de les sessions");
     }
-
+    db->~Database();
     return sessions;
 }
 
@@ -65,7 +65,15 @@ int CercadoraSessio::cercarId(string estudiant, string tema, string dia) {
 
 	string query = "select id from sessions where creador = '" + estudiant + "' and tema = '" + tema + "' and dia = '" + dia + "'";
 
-	int id = db->executarScalar(query);
+    int id;
+
+    try {
+        id = db->executarScalar(query);
+    }
+    catch (Exception^ ex) {
+        throw gcnew Exception("Impossible afegir-se a aquesta sessió");
+    }
+
 	db->~Database();
 
 	return id;
