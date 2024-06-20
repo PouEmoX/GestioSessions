@@ -1,6 +1,6 @@
 #include "ItemControl.h"
 #include "CtrlApuntarSessio.h"
-#include "Aux.h"
+#include "conversorString.h"
 
 namespace GestioSessions {
 
@@ -31,6 +31,10 @@ namespace GestioSessions {
     private:
         System::Windows::Forms::Label^ label1;
         System::Windows::Forms::Panel^ list_items;
+    private: System::Windows::Forms::Label^ label2;
+    private: System::Windows::Forms::Label^ label3;
+    private: System::Windows::Forms::Label^ label4;
+    private: System::Windows::Forms::Label^ label5;
 
         System::ComponentModel::Container^ components;
 
@@ -39,15 +43,19 @@ namespace GestioSessions {
         {
             this->list_items = (gcnew System::Windows::Forms::Panel());
             this->label1 = (gcnew System::Windows::Forms::Label());
+            this->label2 = (gcnew System::Windows::Forms::Label());
+            this->label3 = (gcnew System::Windows::Forms::Label());
+            this->label4 = (gcnew System::Windows::Forms::Label());
+            this->label5 = (gcnew System::Windows::Forms::Label());
             this->SuspendLayout();
             // 
             // list_items
             // 
             this->list_items->AutoScroll = true;
-            this->list_items->Location = System::Drawing::Point(11, 67);
+            this->list_items->Location = System::Drawing::Point(11, 91);
             this->list_items->Margin = System::Windows::Forms::Padding(2);
             this->list_items->Name = L"list_items";
-            this->list_items->Size = System::Drawing::Size(615, 450);
+            this->list_items->Size = System::Drawing::Size(585, 365);
             this->list_items->TabIndex = 2;
             // 
             // label1
@@ -62,10 +70,51 @@ namespace GestioSessions {
             this->label1->TabIndex = 1;
             this->label1->Text = L"Cercar Sessions";
             // 
+            // label2
+            // 
+            this->label2->AutoSize = true;
+            this->label2->Location = System::Drawing::Point(8, 76);
+            this->label2->Name = L"label2";
+            this->label2->Size = System::Drawing::Size(577, 13);
+            this->label2->TabIndex = 3;
+            this->label2->Text = L"_________________________________________________________________________________"
+                L"______________";
+            // 
+            // label3
+            // 
+            this->label3->AutoSize = true;
+            this->label3->Location = System::Drawing::Point(23, 73);
+            this->label3->Name = L"label3";
+            this->label3->Size = System::Drawing::Size(44, 13);
+            this->label3->TabIndex = 4;
+            this->label3->Text = L"Creador";
+            // 
+            // label4
+            // 
+            this->label4->AutoSize = true;
+            this->label4->Location = System::Drawing::Point(127, 73);
+            this->label4->Name = L"label4";
+            this->label4->Size = System::Drawing::Size(34, 13);
+            this->label4->TabIndex = 5;
+            this->label4->Text = L"Tema";
+            // 
+            // label5
+            // 
+            this->label5->AutoSize = true;
+            this->label5->Location = System::Drawing::Point(248, 73);
+            this->label5->Name = L"label5";
+            this->label5->Size = System::Drawing::Size(57, 13);
+            this->label5->TabIndex = 6;
+            this->label5->Text = L"Dia y Hora";
+            // 
             // CercarSessions
             // 
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
             this->ClientSize = System::Drawing::Size(600, 366);
+            this->Controls->Add(this->label5);
+            this->Controls->Add(this->label4);
+            this->Controls->Add(this->label3);
+            this->Controls->Add(this->label2);
             this->Controls->Add(this->list_items);
             this->Controls->Add(this->label1);
             this->DoubleBuffered = true;
@@ -125,5 +174,6 @@ namespace GestioSessions {
             LoadData();
         }
 
-    };
+
+};
 }

@@ -5,8 +5,8 @@
 #include"Inici.h"
 #include"Registrar.h"
 #include "CrearSessio.h"
-#include "AuthSys.h"
-#include "Aux.h"
+#include "DadesUsuari.h"
+#include "conversorString.h"
 
 #include "TxLogin.h"
 
@@ -259,7 +259,7 @@ namespace CppCLRWinFormsProject {
 				inici->AutoScroll = true;
 				inici->Dock = DockStyle::Fill;
 
-				this->Controls->Clear(); // Limpia cualquier control previo en el panel
+				this->Controls->Clear(); 
 				this->Controls->Add(inici);
 
 				inici->Show();

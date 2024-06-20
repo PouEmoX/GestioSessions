@@ -2,7 +2,7 @@
 #include "MevesSessions.h"
 #include "ItemControlNI.h"
 #include "TxVeureSessions.h"
-#include "Aux.h"
+#include "conversorString.h"
 
 #include<vector>
 

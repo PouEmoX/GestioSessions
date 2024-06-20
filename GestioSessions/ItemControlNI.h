@@ -1,5 +1,5 @@
 #pragma once
-#include "Aux.h"
+#include "conversorString.h"
 #include "CtrlApuntarSessio.h"
 
 

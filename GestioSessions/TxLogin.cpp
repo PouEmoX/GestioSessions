@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "TxLogin.h"
-#include "AuthSys.h"
+#include "DadesUsuari.h"
 
 TxLogin::TxLogin(string e, string c) {
     estudiant = e;
@@ -19,13 +19,13 @@ bool TxLogin::Executa() {
             return false;
         }
 
-        AuthSys& auth = AuthSys::getInstance();
+        DadesUsuari& auth = DadesUsuari::getInstance();
         auth.setUsername(estudiant);
         // Si la búsqueda te exit retornem vertader
         return true;
     }
     catch (Exception^ ex) {
-        throw ex;
+        throw gcnew Exception ("No s'ha pogut iniciar sessìó");
         return false;
     }
 }

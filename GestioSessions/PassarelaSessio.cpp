@@ -51,6 +51,8 @@ void PassarelaSessio::inserta() {
 
         sql = "INSERT INTO participants (sessioId, estudiantUsername) VALUES (@sessioId, @username)";
         db->executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
+
+        db->~Database();
     }
     catch (Exception^ ex) {
         throw gcnew Exception("Dades introduïdes no vàlides");

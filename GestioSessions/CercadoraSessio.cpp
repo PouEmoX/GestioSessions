@@ -1,8 +1,8 @@
 #include "pch.h"
 #include "CercadoraSessio.h"
 #include "Database.h"
-#include "Aux.h"
-#include "AuthSys.h"
+#include "conversorString.h"
+#include "DadesUsuari.h"
 
 CercadoraSessio::CercadoraSessio() {}
 

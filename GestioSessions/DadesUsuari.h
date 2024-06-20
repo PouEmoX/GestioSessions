@@ -2,18 +2,18 @@
 
 #include <string>
 
-class AuthSys {
+class DadesUsuari {
 private:
     std::string username;
 
     // Constructor privado para prevenir la instanciación desde fuera de la clase
-    AuthSys() {}
+    DadesUsuari() {}
 
 public:
     // Función estática para obtener la instancia única de la clase
-    static AuthSys& getInstance() {
+    static DadesUsuari& getInstance() {
         // Declaración de la instancia estática
-        static AuthSys instance;
+        static DadesUsuari instance;
         return instance;
     }
 

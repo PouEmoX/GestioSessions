@@ -31,6 +31,10 @@ namespace GestioSessions {
     private:
         System::Windows::Forms::Label^ label1;
     private: System::Windows::Forms::Panel^ list_items;
+    private: System::Windows::Forms::Label^ label5;
+    private: System::Windows::Forms::Label^ label4;
+    private: System::Windows::Forms::Label^ label3;
+    private: System::Windows::Forms::Label^ label2;
 
 
 
@@ -42,6 +46,10 @@ namespace GestioSessions {
         {
             this->label1 = (gcnew System::Windows::Forms::Label());
             this->list_items = (gcnew System::Windows::Forms::Panel());
+            this->label5 = (gcnew System::Windows::Forms::Label());
+            this->label4 = (gcnew System::Windows::Forms::Label());
+            this->label3 = (gcnew System::Windows::Forms::Label());
+            this->label2 = (gcnew System::Windows::Forms::Label());
             this->SuspendLayout();
             // 
             // label1
@@ -59,16 +67,57 @@ namespace GestioSessions {
             // list_items
             // 
             this->list_items->AutoScroll = true;
-            this->list_items->Location = System::Drawing::Point(9, 68);
+            this->list_items->Location = System::Drawing::Point(9, 82);
             this->list_items->Margin = System::Windows::Forms::Padding(2);
             this->list_items->Name = L"list_items";
-            this->list_items->Size = System::Drawing::Size(610, 450);
+            this->list_items->Size = System::Drawing::Size(625, 332);
             this->list_items->TabIndex = 1;
+            // 
+            // label5
+            // 
+            this->label5->AutoSize = true;
+            this->label5->Location = System::Drawing::Point(361, 67);
+            this->label5->Name = L"label5";
+            this->label5->Size = System::Drawing::Size(57, 13);
+            this->label5->TabIndex = 10;
+            this->label5->Text = L"Dia y Hora";
+            // 
+            // label4
+            // 
+            this->label4->AutoSize = true;
+            this->label4->Location = System::Drawing::Point(180, 67);
+            this->label4->Name = L"label4";
+            this->label4->Size = System::Drawing::Size(34, 13);
+            this->label4->TabIndex = 9;
+            this->label4->Text = L"Tema";
+            // 
+            // label3
+            // 
+            this->label3->AutoSize = true;
+            this->label3->Location = System::Drawing::Point(26, 67);
+            this->label3->Name = L"label3";
+            this->label3->Size = System::Drawing::Size(44, 13);
+            this->label3->TabIndex = 8;
+            this->label3->Text = L"Creador";
+            // 
+            // label2
+            // 
+            this->label2->AutoSize = true;
+            this->label2->Location = System::Drawing::Point(11, 70);
+            this->label2->Name = L"label2";
+            this->label2->Size = System::Drawing::Size(577, 13);
+            this->label2->TabIndex = 7;
+            this->label2->Text = L"_________________________________________________________________________________"
+                L"______________";
             // 
             // MevesSessions
             // 
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
             this->ClientSize = System::Drawing::Size(600, 366);
+            this->Controls->Add(this->label5);
+            this->Controls->Add(this->label4);
+            this->Controls->Add(this->label3);
+            this->Controls->Add(this->label2);
             this->Controls->Add(this->label1);
             this->Controls->Add(this->list_items);
             this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
@@ -83,5 +132,5 @@ namespace GestioSessions {
     private:
         void LoadData();
 #pragma endregion
-    };
+};
 }

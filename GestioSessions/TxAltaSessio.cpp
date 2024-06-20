@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "TxAltaSessio.h"
-#include "AuthSys.h"
+#include "DadesUsuari.h"
 
 using namespace System;
 
@@ -10,14 +10,14 @@ TxAltaSessio::TxAltaSessio(string t, string d) {
 };
 
 void TxAltaSessio::Executa() {
-	AuthSys& auth = AuthSys::getInstance();
+	DadesUsuari& auth = DadesUsuari::getInstance();
 	PassarelaSessio ps(auth.getUsername(), tema, dia);
 
 	try {
 		ps.inserta();
 	}
 	catch(Exception^ ex) {
-		throw(ex);
+		throw gcnew Exception ("No s'ha pogut crear la sessió d'estudi");
 	}
 }
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "TxAltaEstudiant.h"
-#include "Aux.h"
+#include "conversorString.h"
 
 namespace GestioSessions {
 

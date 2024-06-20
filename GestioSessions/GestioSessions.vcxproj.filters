@@ -56,7 +56,7 @@
     <ClInclude Include="Database.h">
       <Filter>Source Files\Dades</Filter>
     </ClInclude>
-    <ClInclude Include="AuthSys.h">
+    <ClInclude Include="DadesUsuari.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MevesSessions.h">
@@ -74,7 +74,7 @@
     <ClInclude Include="PassarelaEstudiant.h">
       <Filter>Source Files\Dades</Filter>
     </ClInclude>
-    <ClInclude Include="Aux.h">
+    <ClInclude Include="conversorString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CtrlApuntarSessio.h">
@@ -133,7 +133,7 @@
     <ClCompile Include="Database.cpp">
       <Filter>Source Files\Dades</Filter>
     </ClCompile>
-    <ClCompile Include="AuthSys.cpp">
+    <ClCompile Include="DadesUsuari.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MevesSessions.cpp">
@@ -151,7 +151,7 @@
     <ClCompile Include="PassarelaEstudiant.cpp">
       <Filter>Source Files\Dades</Filter>
     </ClCompile>
-    <ClCompile Include="Aux.cpp">
+    <ClCompile Include="conversorString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CtrlApuntarSessio.cpp">

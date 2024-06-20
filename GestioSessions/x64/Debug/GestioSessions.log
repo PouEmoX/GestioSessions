@@ -1,9 +1,13 @@
-﻿  CercarSessions.cpp
-  CppCLR_WinFormsProject.cpp
-  Inici.cpp
-  ItemControl.cpp
-  MevesSessions.cpp
-  Registrar.cpp
+﻿  CercadoraEstudiant.cpp
+  PassarelaEstudiant.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp(28,19): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/PassarelaEstudiant.cpp")
+  
+  PassarelaParticipants.cpp
+  PassarelaSessio.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp(57,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/PassarelaSessio.cpp")
+  
   Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestioSessions.vcxproj -> C:\Uni\Soporte ESSI\GestioSessions\x64\Debug\GestioSessions.exe

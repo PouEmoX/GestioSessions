@@ -141,8 +141,8 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AuthSys.h" />
-    <ClInclude Include="Aux.h" />
+    <ClInclude Include="DadesUsuari.h" />
+    <ClInclude Include="conversorString.h" />
     <ClInclude Include="CercadoraEstudiant.h" />
     <ClInclude Include="CercadoraSessio.h" />
     <ClInclude Include="CercarSessions.h">
@@ -184,8 +184,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="AuthSys.cpp" />
-    <ClCompile Include="Aux.cpp" />
+    <ClCompile Include="DadesUsuari.cpp" />
+    <ClCompile Include="conversorString.cpp" />
     <ClCompile Include="CercadoraEstudiant.cpp" />
     <ClCompile Include="CercadoraSessio.cpp" />
     <ClCompile Include="CercarSessions.cpp" />

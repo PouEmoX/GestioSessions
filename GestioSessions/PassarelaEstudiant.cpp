@@ -28,6 +28,8 @@ void PassarelaEstudiant::inserta() {
 	catch(Exception^ ex){
 		throw gcnew Exception("Usuari ja registrat");
 	}
+
+	db->~Database();
 }
 
 string PassarelaEstudiant::obteEstudiant() {

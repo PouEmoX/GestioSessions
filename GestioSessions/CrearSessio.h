@@ -1,6 +1,6 @@
 #pragma once
 #include "TxAltaSessio.h"
-#include "Aux.h"
+#include "conversorString.h"
 
 namespace GestioSessions {
 

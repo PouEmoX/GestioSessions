@@ -1,5 +1,5 @@
 #pragma once
-#include "Aux.h"
+#include "conversorString.h"
 #include "CtrlApuntarSessio.h"
 
 
@@ -63,7 +63,7 @@ namespace GestioSessions {
             this->lbl_Tema->AutoSize = true;
             this->lbl_Tema->Font = (gcnew System::Drawing::Font(L"Segoe UI Symbol", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->lbl_Tema->Location = System::Drawing::Point(104, 10);
+            this->lbl_Tema->Location = System::Drawing::Point(118, 10);
             this->lbl_Tema->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->lbl_Tema->Name = L"lbl_Tema";
             this->lbl_Tema->Size = System::Drawing::Size(45, 19);

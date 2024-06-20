@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CercadoraEstudiant.h"
 #include "Database.h"
-#include "Aux.h"
+#include "conversorString.h"
 
 using namespace System;
 
@@ -25,6 +25,7 @@ PassarelaEstudiant CercadoraEstudiant::cercar(string estudiant, string contrasen
         }
 
         reader->Close();
+        db->~Database();
 
         return pe;
     }
@@ -32,4 +33,5 @@ PassarelaEstudiant CercadoraEstudiant::cercar(string estudiant, string contrasen
         throw(ex); 
     }
 
+    db->~Database();
 }
