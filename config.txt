@@ -1,4 +1,0 @@
-datasource=ubiwan.epsevg.upc.edu;
-username=amep00;
-password=aePeph3Ahmi4-;
-database=amep00;
