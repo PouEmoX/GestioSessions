@@ -1,5 +1,6 @@
 #pragma once
 #include "TxAltaSessio.h"
+#include "TxTransaccio.h"
 #include "conversorString.h"
 
 namespace GestioSessions {
@@ -44,6 +45,7 @@ namespace GestioSessions {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Button^ button1;
 
 	protected:
 		System::ComponentModel::Container^ components;
@@ -59,6 +61,7 @@ namespace GestioSessions {
 			this->Data = (gcnew System::Windows::Forms::DateTimePicker());
 			this->Hora = (gcnew System::Windows::Forms::DateTimePicker());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// txt_tema
@@ -135,10 +138,22 @@ namespace GestioSessions {
 			this->label4->TabIndex = 12;
 			this->label4->Text = L"Hora";
 			// 
+			// button1
+			// 
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Location = System::Drawing::Point(431, 362);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(132, 40);
+			this->button1->TabIndex = 14;
+			this->button1->Text = L"Transacció";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &CrearSessio::button1_Click);
+			// 
 			// CrearSessio
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->ClientSize = System::Drawing::Size(654, 455);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->Hora);
 			this->Controls->Add(this->Data);
@@ -182,5 +197,29 @@ namespace GestioSessions {
 			}
 		}
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		conversorString cs;
+		String^ diaFormatat = Data->Value.ToString("yyyy-MM-dd");
+		String^ horaFormatada = Hora->Value.ToString("HH:mm");
+		TxTransaccio tT(cs.convertirString(txt_tema->Text), cs.convertirString(diaFormatat + " " + horaFormatada));
+
+		if (txt_tema->Text == "") {
+			MessageBox::Show("Has de possar un tema");
+		}
+		else {
+			try {
+				tT.Executa();
+				MessageBox::Show("Sessió creada exitosament.");
+			}
+			catch (Exception^ ex) {
+				MessageBox::Show("Error al crear la sessió: " + ex->Message);
+			}
+			finally {
+				txt_tema->Text = "";
+				Data->Value = DateTime::Now;
+				Hora->Value = DateTime::Parse("00:00");
+			}
+		}
+	}
+};
 }

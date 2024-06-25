@@ -180,6 +180,7 @@
     <ClInclude Include="TxAltaEstudiant.h" />
     <ClInclude Include="TxAltaSessio.h" />
     <ClInclude Include="TxLogin.h" />
+    <ClInclude Include="TxTransaccio.h" />
     <ClInclude Include="TxVeureSessions.h" />
   </ItemGroup>
   <ItemGroup>
@@ -193,7 +194,6 @@
     <ClCompile Include="CrearSessio.cpp" />
     <ClCompile Include="CtrlApuntarSessio.cpp" />
     <ClCompile Include="Database.cpp" />
-    <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Inici.cpp" />
     <ClCompile Include="ItemControl.cpp" />
     <ClCompile Include="ItemControlNI.cpp" />
@@ -212,6 +212,7 @@
     <ClCompile Include="TxAltaEstudiant.cpp" />
     <ClCompile Include="TxAltaSessio.cpp" />
     <ClCompile Include="TxLogin.cpp" />
+    <ClCompile Include="TxTransaccio.cpp" />
     <ClCompile Include="TxVeureSessions.cpp" />
   </ItemGroup>
   <ItemGroup>

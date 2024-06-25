@@ -12,11 +12,11 @@ ref class Database
 private:
     static Database^ instance;
     String^ connectionString;
-    MySqlConnection^ conn;
 
     Database();
 
 public:
+    MySqlConnection^ conn;
     ~Database();
 
     static Database^ getInstance();

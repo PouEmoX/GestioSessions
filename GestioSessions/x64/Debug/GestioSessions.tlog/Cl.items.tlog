@@ -8,7 +8,6 @@ C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CppCLR_WinFormsProject.cpp;C:\
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CrearSessio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\CrearSessio.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CtrlApuntarSessio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\CtrlApuntarSessio.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Database.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Database.obj
-C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Form1.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Form1.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Inici.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\Inici.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\ItemControl.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\ItemControl.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\ItemControlNI.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\ItemControlNI.obj
@@ -22,5 +21,6 @@ C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\Sessio.cpp;C:\Uni\Soporte ESSI
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaEstudiant.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxAltaEstudiant.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxAltaSessio.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxLogin.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxLogin.obj
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxTransaccio.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxTransaccio.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxVeureSessions.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\TxVeureSessions.obj
 C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cpp;C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj

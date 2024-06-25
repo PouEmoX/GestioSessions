@@ -32,7 +32,7 @@ Class GestioSessions.ItemControl: AutoLayout, AnsiClass, Class, Public, BeforeFi
     add_ItemActionEvent(ItemActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
     remove_ItemActionEvent(ItemActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
     SetData(String, String, String): PrivateScope, Public, HideBySig
-    convertirData(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    convertirData(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, HideBySig
 Class GestioSessions.ItemControl+ItemActionEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
   :System.MulticastDelegate
     Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName

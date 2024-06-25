@@ -14,6 +14,7 @@ public:
     PassarelaSessio(string e, string t,string d);
 
     void inserta();
+    void insertaUnica();
 
     string obteEstudiant() const;
     string obteTema() const;

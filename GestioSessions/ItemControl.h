@@ -123,16 +123,17 @@ namespace GestioSessions {
             lbl_dia->Text = dia;
         }
 
-        string convertirData(string data) {
-            // Asumimos que el formato de entrada es dd/mm/yyyy hh:mm:ss
-            string dd = data.substr(0, 2);
-            string mm = data.substr(3, 2);
-            string yyyy = data.substr(6, 4);
-            string time = data.substr(11); // Extrae la parte de la hora
-
-            string dataConvertida = yyyy + "-" + mm + "-" + dd + " " + time;
-
-            return dataConvertida;
+        string convertirData(String^ data) {
+            try {
+                DateTime dateTime = DateTime::Parse(data);
+                String^ dataConvertida = dateTime.ToString("yyyy-MM-dd HH:mm:ss");
+                
+                conversorString cs;
+                return cs.convertirString(dataConvertida);
+            }
+            catch (FormatException^ e) {
+                throw gcnew Exception("Formato de fecha/hora no válido: " + e->Message);
+            }
         }
 
 #pragma endregion
@@ -140,14 +141,11 @@ namespace GestioSessions {
         conversorString cs;
         CtrlApuntarSessio cAS;
 
-        string fechaHoraConvertida = convertirData(cs.convertirString(lbl_dia->Text));
+        string fechaHoraConvertida = convertirData(lbl_dia->Text);
 
         cAS.apunta(cs.convertirString(lbl_username->Text), cs.convertirString(lbl_Tema->Text), fechaHoraConvertida);
 
         ItemActionEvent(this, EventArgs::Empty);
     }
-
-
-
     };
 }

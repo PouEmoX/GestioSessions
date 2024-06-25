@@ -13,7 +13,7 @@ Database::Database() {
     config.open("..\\config.txt", ios::in);
 
     if (config.fail()) {
-        throw("Imposible accedir a l'informació de la base de dades");
+        throw gcnew Exception ("Imposible accedir a l'informació de la base de dades");
     }
     else {
         while (!config.eof()) {
@@ -35,7 +35,7 @@ Database::Database() {
         conn->Open(); // Abrir la conexión una vez
     }
     catch (Exception^ ex) {
-        throw("No es pot obrir la conexió amb la base de dades: " + ex);
+        throw gcnew Exception ("No es pot obrir la conexió amb la base de dades: " + ex);
     }
 }
 

@@ -101,6 +101,9 @@
     <ClInclude Include="ItemControlNI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxTransaccio.h">
+      <Filter>Source Files\Domini</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -110,9 +113,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Form1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Inici.cpp">
@@ -177,6 +177,9 @@
     </ClCompile>
     <ClCompile Include="ItemControlNI.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxTransaccio.cpp">
+      <Filter>Source Files\Domini</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
