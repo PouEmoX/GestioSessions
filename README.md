@@ -1,8 +1,8 @@
 # GestioSessions
 
-Per que el programa funcioni s'ha de crear un fitxer .txt dins de la carpeta del repositori clonada (../GestioSessions) amb les dades de conexió amb la base de dades.
+Per que el programa funcioni s'ha de crear un fitxer .txt dins de la carpeta del repositori clonat `(../GestioSessions)` amb les dades de conexió amb la base de dades.
 
-El nom del fitxer ha de ser `config.txt` y el seu contingut ha de tindre la següent estructura:
+El nom del fitxer ha de ser `config.txt` y el seu contingut ha de tindre el següent contingut:
 
 - datasource=datasource.direction;
 - username=amepXX;
