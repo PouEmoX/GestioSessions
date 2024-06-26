@@ -1,7 +1,6 @@
-﻿  CppCLR_WinFormsProject.cpp
-  CrearSessio.cpp
-  Inici.cpp
-  Registrar.cpp
-  Generando código...
+﻿  TxTransaccio.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxTransaccio.cpp(19,20): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/TxTransaccio.cpp")
+  
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestioSessions.vcxproj -> C:\Uni\Soporte ESSI\GestioSessions\x64\Debug\GestioSessions.exe
