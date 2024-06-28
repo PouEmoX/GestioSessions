@@ -158,7 +158,7 @@ namespace GestioSessions {
 			this->btn_exit->Name = L"btn_exit";
 			this->btn_exit->Size = System::Drawing::Size(87, 34);
 			this->btn_exit->TabIndex = 13;
-			this->btn_exit->Text = L"Sortir";
+			this->btn_exit->Text = L"Enrere";
 			this->btn_exit->UseVisualStyleBackColor = false;
 			this->btn_exit->Click += gcnew System::EventHandler(this, &Registrar::btn_exit_Click);
 			// 
@@ -203,7 +203,7 @@ namespace GestioSessions {
 	private: System::Void LoadLogin(System::Object^ sender, System::EventArgs^ e);
 
 	private: System::Void btn_exit_Click(System::Object^ sender, System::EventArgs^ e) {
-		Application::Exit();
+		LoadLogin(sender, e);
 	}
 	private: System::Void btn_reg_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (txt_pwd->Text != txt_pwd2->Text || txt_username->Text == "") {
