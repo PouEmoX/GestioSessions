@@ -253,21 +253,17 @@ namespace CppCLRWinFormsProject {
 		TxLogin txLogin = TxLogin(username, password);
 
 		try {
-			if (txLogin.Executa()) {
-				GestioSessions::Inici^ inici = gcnew GestioSessions::Inici();
+			txLogin.Executa();
+			GestioSessions::Inici^ inici = gcnew GestioSessions::Inici();
 
-				inici->TopLevel = false;
-				inici->AutoScroll = true;
-				inici->Dock = DockStyle::Fill;
+			inici->TopLevel = false;
+			inici->AutoScroll = true;
+			inici->Dock = DockStyle::Fill;
 
-				this->Controls->Clear(); 
-				this->Controls->Add(inici);
+			this->Controls->Clear();
+			this->Controls->Add(inici);
 
-				inici->Show();
-			}
-			else {
-				MessageBox::Show("Usuari o contrasenya incorrectes");
-			}
+			inici->Show();
 		}
 		catch (Exception^ ex) {
 			MessageBox::Show("Error al iniciar sessió: " + ex->Message);

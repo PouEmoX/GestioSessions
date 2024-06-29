@@ -10,7 +10,7 @@ private:
 	string contrasenya;
 public:
 	TxLogin(string e, string c);
-	bool Executa();
+	void Executa();
 
 };
 

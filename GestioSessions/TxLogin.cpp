@@ -7,7 +7,7 @@ TxLogin::TxLogin(string e, string c) {
     contrasenya = c;
 }
 
-bool TxLogin::Executa() {
+void TxLogin::Executa() {
     try {
         // Realitza la búsqueda de l'estudiant
         CercadoraEstudiant ce = CercadoraEstudiant();
@@ -16,17 +16,14 @@ bool TxLogin::Executa() {
         // Tractem el cas en que hi ha cap error d'execució peró no es troba l'estudiant
         if (estudiante.obteEstudiant().empty() || estudiante.obteContrasenya().empty())
         {
-            return false;
+            throw gcnew Exception("Usuari no registrat");
         }
 
         DadesUsuari& auth = DadesUsuari::getInstance();
         auth.setUsername(estudiant);
-        // Si la búsqueda te exit retornem vertader
-        return true;
     }
     catch (Exception^ ex) {
-        throw gcnew Exception ("No s'ha pogut iniciar sessìó");
-        return false;
+        throw gcnew Exception (ex->Message);
     }
 }
 
