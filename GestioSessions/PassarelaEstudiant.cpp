@@ -13,7 +13,6 @@ PassarelaEstudiant::PassarelaEstudiant(string e, string c) {
 }
 
 void PassarelaEstudiant::inserta() {
-	//Código sin probar
 	// Aplicar TRIM() al username
 	string trimmedUsername = estudiant.substr(estudiant.find_first_not_of(' '), estudiant.find_last_not_of(' ') - estudiant.find_first_not_of(' ') + 1);
 	string trimmedPassword = contrasenya.substr(contrasenya.find_first_not_of(' '), contrasenya.find_last_not_of(' ') - contrasenya.find_first_not_of(' ') + 1);

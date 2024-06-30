@@ -103,9 +103,9 @@ namespace GestioSessions {
             this->label5->AutoSize = true;
             this->label5->Location = System::Drawing::Point(248, 73);
             this->label5->Name = L"label5";
-            this->label5->Size = System::Drawing::Size(57, 13);
+            this->label5->Size = System::Drawing::Size(54, 13);
             this->label5->TabIndex = 6;
-            this->label5->Text = L"Dia y Hora";
+            this->label5->Text = L"Dia i Hora";
             // 
             // CercarSessions
             // 
@@ -129,38 +129,30 @@ namespace GestioSessions {
     private:
         void CercarSessions::LoadData() {
             try {
-                // Limpiar los controles actuales en el panel
                 list_items->Controls->Clear();
 
                 CtrlApuntarSessio controlador;
                 vector<SessioInfo> sessions = controlador.visualitza();
 
-                // Inicializar la posición Y para los controles
                 int y = 10;
 
                 conversorString cs;
 
-                // Recorrer los resultados de la transacción
                 for (const auto& sessio : sessions) {
-                    // Convertir los datos a System::String^
                     String^ username = cs.convertirString(sessio.username.c_str());
                     String^ tema = cs.convertirString(sessio.tema.c_str());
                     String^ dia = cs.convertirString(sessio.dia.c_str());
 
-                    // Crear un nuevo control ItemControl y establecer sus datos
                     ItemControl^ item = gcnew ItemControl();
                     item->SetData(username, tema, dia);
 
-                    // Suscribirse al evento ItemActionEvent
                     item->ItemActionEvent += gcnew ItemControl::ItemActionEventHandler(this, &CercarSessions::OnItemAction);
 
-                    // Configurar la ubicación del control y agregarlo al panel
                     item->Location = System::Drawing::Point(10, y);
-                    item->Size = System::Drawing::Size(500, 50); // Ajustar el tamaño según el diseño de ItemControl
+                    item->Size = System::Drawing::Size(500, 50); 
                     list_items->Controls->Add(item);
 
-                    // Incrementar la posición Y para el próximo control
-                    y += item->Height + 10; // Asegurar que el espacio entre controles sea constante
+                    y += item->Height + 10; 
                 }
             }
             catch (System::Exception^ ex) {
@@ -170,7 +162,6 @@ namespace GestioSessions {
 
 
         void CercarSessions::OnItemAction(ItemControl^ sender, EventArgs^ e) {
-            // Recargar los datos en el panel
             LoadData();
         }
 

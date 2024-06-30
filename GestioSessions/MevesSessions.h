@@ -78,9 +78,9 @@ namespace GestioSessions {
             this->label5->AutoSize = true;
             this->label5->Location = System::Drawing::Point(361, 67);
             this->label5->Name = L"label5";
-            this->label5->Size = System::Drawing::Size(57, 13);
+            this->label5->Size = System::Drawing::Size(54, 13);
             this->label5->TabIndex = 10;
-            this->label5->Text = L"Dia y Hora";
+            this->label5->Text = L"Dia i Hora";
             // 
             // label4
             // 

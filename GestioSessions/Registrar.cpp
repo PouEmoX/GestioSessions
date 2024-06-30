@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Registrar.h"
 
-#include "Login.h"  // Incluye el archivo de cabecera de Login
+#include "Login.h" 
 
 namespace GestioSessions {
 

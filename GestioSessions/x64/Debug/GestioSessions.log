@@ -1,3 +1,39 @@
-﻿  TxLogin.cpp
+﻿  CercadoraSessio.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp(36,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/CercadoraSessio.cpp")
+  
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp(55,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/CercadoraSessio.cpp")
+  
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\CercadoraSessio.cpp(73,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/CercadoraSessio.cpp")
+  
+  CercarSessions.cpp
+  CppCLR_WinFormsProject.cpp
+  CtrlApuntarSessio.cpp
+  DadesUsuari.cpp
+  Database.cpp
+  Inici.cpp
+  MevesSessions.cpp
+  PassarelaEstudiant.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaEstudiant.cpp(27,19): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/PassarelaEstudiant.cpp")
+  
+  PassarelaSessio.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\PassarelaSessio.cpp(57,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/PassarelaSessio.cpp")
+  
+  Registrar.cpp
+  TxAltaSessio.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxAltaSessio.cpp(19,19): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/TxAltaSessio.cpp")
+  
+  TxLogin.cpp
+  TxTransaccio.cpp
+C:\Uni\Soporte ESSI\GestioSessions\GestioSessions\TxTransaccio.cpp(19,20): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/TxTransaccio.cpp")
+  
+  TxVeureSessions.cpp
+  Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestioSessions.vcxproj -> C:\Uni\Soporte ESSI\GestioSessions\x64\Debug\GestioSessions.exe

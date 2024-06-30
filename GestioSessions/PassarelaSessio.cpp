@@ -67,31 +67,31 @@ void PassarelaSessio::insertaUnica() {
     MySqlTransaction^ transaccio = nullptr;
 
     try {
-        // Iniciar la transacción
+        // Iniciar la transacció
         db->beginTransaction(transaccio, db->conn);
 
-        // Insertar la nueva sesión
+        // Insertar la nova sessió
         string sql = "INSERT INTO sessions(creador, tema, dia) VALUES(@username, @tema, @dia)";
         db->executarNonQuery(sql, { {"@username", trimmedUsername}, {"@tema", tema}, {"@dia", dia} });
 
-        // Verificar si ya existe una sesión con el mismo día y hora
+        // Verificar si ja hi existeix una sessió amb el mateix dia i hora
         sql = "SELECT COUNT(*) FROM sessions WHERE creador = @username AND dia = @dia";
         int count = db->executarScalar(sql);
 
         if (count > 1) {
-            // Si existe, realizar rollback
+            // Si hi existeix, realitzar un rollback
             db->rollbackTransaction(transaccio);
             throw gcnew Exception("Ja existeix una sessió per aquest dia i hora");
         }
         else {
-            // Si no, realizar commit
+            // Si no, realitzar commit
             db->commitTransaction(transaccio);
 
-            // Obtener el ID de la sesión recién insertada
+            // Obtindre el ID de la sessió insertada
             sql = "SELECT LAST_INSERT_ID()";
             int id = db->executarScalar(sql);
 
-            // Insertar en la tabla participants
+            // Insertar a la tabla participants
             sql = "INSERT INTO participants (sessioId, estudiantUsername) VALUES (@sessioId, @username)";
             db->executarNonQuery(sql, { {"@sessioId", to_string(id)}, {"@username", trimmedUsername} });
         }

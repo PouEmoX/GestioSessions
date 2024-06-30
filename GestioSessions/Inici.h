@@ -225,7 +225,7 @@ namespace GestioSessions {
 		template<class T>
 		void OpenPanel(T FormSon)
 		{
-			//Comprovamos si hay elementos dentro del panel y los eliminamos en caso afirmativo
+			//Comprovamos si n'hi ha dades al panel
 			if (this->display_panel->Controls->Count > 0) {
 				this->display_panel->Controls->RemoveAt(0);
 			}

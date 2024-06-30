@@ -3,9 +3,7 @@
 #include <fstream>
 #include <vcclr.h>
 
-// Constructor privado
 Database::Database() {
-    // Inicializar la cadena de conexión
     String^ connection = "";
 
     ifstream config;
@@ -32,7 +30,7 @@ Database::Database() {
     conn = gcnew MySqlConnection(connectionString);
 
     try {
-        conn->Open(); // Abrir la conexión una vez
+        conn->Open(); 
     }
     catch (Exception^ ex) {
         throw gcnew Exception ("No es pot obrir la conexió amb la base de dades: " + ex);
@@ -48,7 +46,7 @@ Database::~Database() {
     instance = nullptr;
 }
 
-// Método estático para obtener la instancia de la clase
+// Métode estátic per obtindre una instancia de la classe
 Database^ Database::getInstance() {
     if (instance == nullptr) {
         instance = gcnew Database();
@@ -75,7 +73,6 @@ void Database::executarNonQuery(string comanda_sql, map<string, string> parametr
     String^ sql = gcnew String(comanda_sql.c_str());
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 
-    // Añadir parámetros
     for (auto const& param : parametros) {
         String^ paramName = gcnew String(param.first.c_str());
         String^ paramValue = gcnew String(param.second.c_str());

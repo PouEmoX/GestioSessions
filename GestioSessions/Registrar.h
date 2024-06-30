@@ -173,7 +173,7 @@ namespace GestioSessions {
 			this->btn_reg->Name = L"btn_reg";
 			this->btn_reg->Size = System::Drawing::Size(125, 34);
 			this->btn_reg->TabIndex = 12;
-			this->btn_reg->Text = L"Registar-se";
+			this->btn_reg->Text = L"Registrar-se";
 			this->btn_reg->UseVisualStyleBackColor = false;
 			this->btn_reg->Click += gcnew System::EventHandler(this, &Registrar::btn_reg_Click);
 			// 
